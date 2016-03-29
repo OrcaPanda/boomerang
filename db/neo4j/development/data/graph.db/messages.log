@@ -1,845 +1,438 @@
-2016-03-23 22:42:51.621+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
-2016-03-23 22:42:51.731+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.keystore.location=data/keystore
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.db.tuning.properties=conf/neo4j.properties
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.database.location=data/graph.db
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.port=7474
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.querylog.filename=data/log/queries.log
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.enabled=true
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.enabled=false
-2016-03-23 22:42:51.737+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_certificate_file=conf/ssl/snakeoil.cert
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.port=7473
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webadmin.rrdb.location=data/rrd
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] remote_shell_enabled=true
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] edition=Community
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_key_file=conf/ssl/snakeoil.key
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=false
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
-2016-03-23 22:42:51.738+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
-2016-03-23 22:42:51.741+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 16.00 GB
-2016-03-23 22:42:51.742+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 532.14 MB
-2016-03-23 22:42:51.743+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 6.91 GB
-2016-03-23 22:42:51.743+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 5.00 GB
-2016-03-23 22:42:51.744+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 1.44 GB
-2016-03-23 22:42:51.744+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
-2016-03-23 22:42:51.744+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 181.73 MB
-2016-03-23 22:42:51.744+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 256.00 MB
-2016-03-23 22:42:51.744+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 4.00 GB
-2016-03-23 22:42:51.751+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
-2016-03-23 22:42:51.752+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen, G1 Perm Gen]
-2016-03-23 22:42:51.754+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=881.19 kB, max=48.00 MB, threshold=0.00 B
-2016-03-23 22:42:51.754+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=40.00 MB, used=3.00 MB, max=-1.00 B, threshold=?
-2016-03-23 22:42:51.754+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=2.00 MB, used=2.00 MB, max=-1.00 B, threshold=?
-2016-03-23 22:42:51.755+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=214.00 MB, used=68.50 MB, max=4.00 GB, threshold=0.00 B
-2016-03-23 22:42:51.755+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Perm Gen (Non-heap memory): committed=20.00 MB, used=12.81 MB, max=82.00 MB, threshold=0.00 B
-2016-03-23 22:42:51.755+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
-2016-03-23 22:42:51.758+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Mac OS X; version: 10.11.3; arch: x86_64; cpus: 8
-2016-03-23 22:42:51.758+0000 INFO  [o.n.k.i.DiagnosticsManager] Max number of file descriptors: 10.00 kB
-2016-03-23 22:42:51.759+0000 INFO  [o.n.k.i.DiagnosticsManager] Number of open file descriptors: 93.00 B
-2016-03-23 22:42:51.769+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 69367@Jianweis-MacBook-Pro.local
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: America/Los_Angeles
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 24.79-b02
-2016-03-23 22:42:51.770+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
-2016-03-23 22:42:51.771+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=tarball, -Dneo4j.home=/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development, -Dneo4j.instance=/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development, -Dfile.encoding=UTF-8]
-2016-03-23 22:42:51.771+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-servlet-1.19.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-consistency-check-2.3.2.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-2.2_2.11-2.2.6.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-server-2.3.2.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/opencsv-2.3.jar
-2016-03-23 22:42:51.775+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-io-9.2.4.v20141103.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-access-1.1.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/jline-2.12.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-webapp-9.2.4.v20141103.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-unsafe-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-servlet-9.2.4.v20141103.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-csv-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-2.3-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-jmx-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-server-9.2.4.v20141103.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-graph-matching-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-shell-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-codegen-2.3.2.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
-2016-03-23 22:42:51.776+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-2.3.2.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/parboiled-scala_2.11-1.1.7.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-jaxrs-1.9.13.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-http-9.2.4.v20141103.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-graph-algo-2.3.2.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-library-2.11.7.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-import-tool-2.3.2.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-io-2.4.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-xml-9.2.4.v20141103.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-server-2.3.2-static-web.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/netty-all-4.0.28.Final.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-frontend-2.3-2.3.2.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/slf4j-api-1.7.6.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
-2016-03-23 22:42:51.777+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.4.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-server-1.19.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-core-1.19.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-core-1.1.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.13.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-lucene-index-2.3.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-browser-2.3.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-lang-2.6.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-security-9.2.4.v20141103.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-logging-2.3.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/asm-5.0.2.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-multipart-1.19.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/javax.servlet-api-3.1.0.jar
-2016-03-23 22:42:51.778+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/bcprov-jdk15on-1.52.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-digester-2.1.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-reflect-2.11.7.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/conf/
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-udc-2.3.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/mimepull-1.9.3.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-function-2.3.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/bcpkix-jdk15on-1.52.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/server-api-2.3.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-consistency-check-legacy-2.3.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-kernel-2.3.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-beanutils-1.8.3.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-parser-combinators_2.11-1.0.4.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/rrd4j-2.2.jar
-2016-03-23 22:42:51.779+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-util-9.2.4.v20141103.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/parboiled-core-1.1.7.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-io-2.3.2.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-core-asl-1.9.13.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/commons-lang3-3.3.2.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-classic-1.1.2.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/rhino-1.7R4.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/lucene-core-3.6.2.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-primitive-collections-2.3.2.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-configuration-1.10.jar
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/jianwei/Library/Java/Extensions
-2016-03-23 22:42:51.780+0000 INFO  [o.n.k.i.DiagnosticsManager] /Library/Java/Extensions
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] /Network/Library/Java/Extensions
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] /System/Library/Java/Extensions
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] /usr/lib/java
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.properties = conf/neo4j-server.properties
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] gopherProxySet = false
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = :
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
-2016-03-23 22:42:51.781+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = unknown
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.ext.udc.source = tarball
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = UTF-8
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = /Users/jianwei
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = America/Los_Angeles
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = UTF-8
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = jianwei
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityBootstrapper
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = /
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
-2016-03-23 22:42:51.782+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.instance = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.home = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = 
-2016-03-23 22:42:51.783+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface utun1:
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:f040:9d5c:7a9b:a481%17
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface utun0:
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:9d86:a91a:e30e:1d39%14
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface awdl0:
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:887:26ff:fe41:6259%12
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface en4:
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2620:149:4:1202:815e:fc52:6385:d2c
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2620:149:4:1202:6a5b:35ff:fe9a:e114
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:6a5b:35ff:fe9a:e114%4
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 17.216.23.22
-2016-03-23 22:42:51.788+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface vnic1:
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 10.37.129.2
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface vnic0:
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 10.211.55.2
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface en0:
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:a65e:60ff:fee8:e073%8
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 17.114.123.185
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface lo0:
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%1
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
-2016-03-23 22:42:51.789+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
-2016-03-23 22:42:52.133+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
-2016-03-23 22:42:52.192+0000 INFO  [o.n.k.NeoStoreDataSource] Opened logical log [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.transaction.db.0] version=0, lastTxId=1 (clean)
-2016-03-23 22:42:52.198+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
-2016-03-23 22:42:52.275+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
-2016-03-23 22:42:52.276+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
-2016-03-23 22:42:52.280+0000 INFO  [o.n.k.KernelHealth] Kernel health set to OK
-2016-03-23 22:42:52.543+0000 INFO  [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
-2016-03-23 22:42:52.543+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now ready
-2016-03-23 22:42:52.544+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
-2016-03-23 22:42:52.544+0000 INFO  [o.n.k.i.DiagnosticsManager] Graph Database: Community StoreId{creationTime=1458772972030, randomId=6698004438304368009, storeVersion=15250506225055238, upgradeTime=1458772972030, upgradeId=1}
-2016-03-23 22:42:52.544+0000 INFO  [o.n.k.i.DiagnosticsManager] Kernel version: 2.3.2,30a48a0
-2016-03-23 22:42:52.544+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
-2016-03-23 22:42:52.545+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
-2016-03-23 22:42:52.545+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
-2016-03-23 22:42:52.545+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] NodeStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyIndexStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipTypeStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] LabelTokenStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] SchemaStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipGroupStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] NeoStore v0.A.6
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
-2016-03-23 22:42:52.546+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.547+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.6: used=0 high=-1
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.6: used=1 high=0
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.6: used=13 high=12
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
-2016-03-23 22:42:52.548+0000 INFO  [o.n.k.i.DiagnosticsManager] Neostore records:
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1458772972030
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 6698004438304368009
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15250506225055238
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1458772972030
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
-2016-03-23 22:42:52.549+0000 INFO  [o.n.k.i.DiagnosticsManager] Transaction log:
-2016-03-23 22:42:52.550+0000 INFO  [o.n.k.i.DiagnosticsManager] No transactions found in any log
-2016-03-23 22:42:52.550+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
-2016-03-23 22:42:52.550+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
-2016-03-23 22:42:52.551+0000 INFO  [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 249795969024 / 21589831680 / 8
+2016-03-28 23:45:45.650+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2016-03-28 23:45:45.763+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2016-03-28 23:45:45.770+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2016-03-28 23:45:45.770+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.keystore.location=data/keystore
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.database.location=data/graph.db
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.port=7474
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.querylog.filename=data/log/queries.log
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.enabled=true
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.enabled=false
+2016-03-28 23:45:45.771+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_certificate_file=conf/ssl/snakeoil.cert
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.port=7473
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webadmin.rrdb.location=data/rrd
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] remote_shell_enabled=true
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] edition=Community
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_key_file=conf/ssl/snakeoil.key
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=false
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2016-03-28 23:45:45.772+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2016-03-28 23:45:45.773+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2016-03-28 23:45:45.774+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 16.00 GB
+2016-03-28 23:45:45.775+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 380.86 MB
+2016-03-28 23:45:45.776+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 6.91 GB
+2016-03-28 23:45:45.777+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 5.00 GB
+2016-03-28 23:45:45.777+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 595.75 MB
+2016-03-28 23:45:45.777+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2016-03-28 23:45:45.778+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 180.86 MB
+2016-03-28 23:45:45.778+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 256.00 MB
+2016-03-28 23:45:45.778+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 4.00 GB
+2016-03-28 23:45:45.779+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2016-03-28 23:45:45.779+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen, G1 Perm Gen]
+2016-03-28 23:45:45.781+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=820.75 kB, max=48.00 MB, threshold=0.00 B
+2016-03-28 23:45:45.781+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=25.00 MB, used=2.00 MB, max=-1.00 B, threshold=?
+2016-03-28 23:45:45.781+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=2.00 MB, used=2.00 MB, max=-1.00 B, threshold=?
+2016-03-28 23:45:45.782+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=229.00 MB, used=71.00 MB, max=4.00 GB, threshold=0.00 B
+2016-03-28 23:45:45.782+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Perm Gen (Non-heap memory): committed=20.00 MB, used=11.86 MB, max=82.00 MB, threshold=0.00 B
+2016-03-28 23:45:45.782+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2016-03-28 23:45:45.783+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Mac OS X; version: 10.11.3; arch: x86_64; cpus: 8
+2016-03-28 23:45:45.784+0000 INFO  [o.n.k.i.DiagnosticsManager] Max number of file descriptors: 10.00 kB
+2016-03-28 23:45:45.784+0000 INFO  [o.n.k.i.DiagnosticsManager] Number of open file descriptors: 93.00 B
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 90502@Jianweis-MacBook-Pro.local
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: America/Los_Angeles
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2016-03-28 23:45:45.790+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 24.79-b02
+2016-03-28 23:45:45.791+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-03-28 23:45:45.791+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=tarball, -Dneo4j.home=/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development, -Dneo4j.instance=/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development, -Dfile.encoding=UTF-8]
+2016-03-28 23:45:45.791+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-servlet-1.19.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-consistency-check-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-2.2_2.11-2.2.6.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-server-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/opencsv-2.3.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-io-9.2.4.v20141103.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-access-1.1.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/jline-2.12.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-webapp-9.2.4.v20141103.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-unsafe-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-servlet-9.2.4.v20141103.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-csv-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-2.3-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-jmx-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-server-9.2.4.v20141103.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-graph-matching-2.3.2.jar
+2016-03-28 23:45:45.793+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-shell-2.3.2.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-codegen-2.3.2.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-2.3.2.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/parboiled-scala_2.11-1.1.7.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-jaxrs-1.9.13.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-http-9.2.4.v20141103.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-graph-algo-2.3.2.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-library-2.11.7.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-import-tool-2.3.2.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-io-2.4.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-xml-9.2.4.v20141103.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-server-2.3.2-static-web.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/netty-all-4.0.28.Final.jar
+2016-03-28 23:45:45.794+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-frontend-2.3-2.3.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/slf4j-api-1.7.6.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-server-1.19.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-core-1.19.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-core-1.1.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.13.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-lucene-index-2.3.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/neo4j-browser-2.3.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-lang-2.6.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-security-9.2.4.v20141103.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-logging-2.3.2.jar
+2016-03-28 23:45:45.795+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/asm-5.0.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jersey-multipart-1.19.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/javax.servlet-api-3.1.0.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/bcprov-jdk15on-1.52.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-digester-2.1.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-reflect-2.11.7.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/conf/
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-udc-2.3.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/mimepull-1.9.3.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-function-2.3.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/bcpkix-jdk15on-1.52.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/server-api-2.3.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-consistency-check-legacy-2.3.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-kernel-2.3.2.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-beanutils-1.8.3.jar
+2016-03-28 23:45:45.796+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/scala-parser-combinators_2.11-1.0.4.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/rrd4j-2.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jetty-util-9.2.4.v20141103.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/parboiled-core-1.1.7.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-io-2.3.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/jackson-core-asl-1.9.13.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/commons-lang3-3.3.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/logback-classic-1.1.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/lib/neo4j-primitive-collections-2.3.2.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/system/lib/commons-configuration-1.10.jar
+2016-03-28 23:45:45.797+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/jianwei/Library/Java/Extensions
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /Library/Java/Extensions
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /Network/Library/Java/Extensions
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /System/Library/Java/Extensions
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /usr/lib/java
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.properties = conf/neo4j-server.properties
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] gopherProxySet = false
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = :
+2016-03-28 23:45:45.798+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = US
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = unknown
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.ext.udc.source = tarball
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = /Users/jianwei
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = America/Los_Angeles
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = UTF-8
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = jianwei
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityBootstrapper
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = en
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = /
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2016-03-28 23:45:45.799+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.instance = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.home = /Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = 
+2016-03-28 23:45:45.800+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2016-03-28 23:45:45.803+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface utun1:
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:f040:9d5c:7a9b:a481%17
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface utun0:
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:9d86:a91a:e30e:1d39%14
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface awdl0:
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:887:26ff:fe41:6259%12
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface en4:
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2620:149:4:1202:f59b:613e:2cb9:20bf
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 2620:149:4:1202:6a5b:35ff:fe9a:e114
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:6a5b:35ff:fe9a:e114%4
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 17.216.23.22
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface en0:
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:a65e:60ff:fee8:e073%8
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 17.114.123.185
+2016-03-28 23:45:45.804+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface lo0:
+2016-03-28 23:45:45.805+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%1
+2016-03-28 23:45:45.805+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2016-03-28 23:45:45.805+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2016-03-28 23:45:45.805+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2016-03-28 23:45:46.105+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-03-28 23:45:46.156+0000 INFO  [o.n.k.NeoStoreDataSource] Opened logical log [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.transaction.db.0] version=0, lastTxId=1 (clean)
+2016-03-28 23:45:46.162+0000 WARN  [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2016-03-28 23:45:46.261+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Rebuilding lucene scan store, this may take a while
+2016-03-28 23:45:46.262+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore] Lucene scan store rebuilt (roughly -1 nodes)
+2016-03-28 23:45:46.266+0000 INFO  [o.n.k.KernelHealth] Kernel health set to OK
+2016-03-28 23:45:46.494+0000 INFO  [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2016-03-28 23:45:46.495+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] Database is now ready
+2016-03-28 23:45:46.495+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-03-28 23:45:46.495+0000 INFO  [o.n.k.i.DiagnosticsManager] Graph Database: Community StoreId{creationTime=1459208746000, randomId=6191006280318933697, storeVersion=15250506225055238, upgradeTime=1459208746000, upgradeId=1}
+2016-03-28 23:45:46.496+0000 INFO  [o.n.k.i.DiagnosticsManager] Kernel version: 2.3.2,30a48a0
+2016-03-28 23:45:46.496+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] Store versions:
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] NodeStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyIndexStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] ArrayPropertyStore v0.A.6
+2016-03-28 23:45:46.497+0000 INFO  [o.n.k.i.DiagnosticsManager] PropertyStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipTypeStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] StringPropertyStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] LabelTokenStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] SchemaStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] RelationshipGroupStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] NeoStore v0.A.6
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager] Id usage:
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.498+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.499+0000 INFO  [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.6: used=0 high=-1
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.6: used=1 high=0
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.6: used=13 high=12
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager] Neostore records:
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1459208746000
+2016-03-28 23:45:46.500+0000 INFO  [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 6191006280318933697
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15250506225055238
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1459208746000
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2016-03-28 23:45:46.501+0000 INFO  [o.n.k.i.DiagnosticsManager] Transaction log:
+2016-03-28 23:45:46.502+0000 INFO  [o.n.k.i.DiagnosticsManager] No transactions found in any log
+2016-03-28 23:45:46.502+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2016-03-28 23:45:46.502+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-03-28 23:45:46.502+0000 INFO  [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 249795969024 / 21293056000 / 8
 Storage files: (filename : modification date - size)
-2016-03-23 22:42:52.551+0000 INFO  [o.n.k.i.DiagnosticsManager]   index:
-2016-03-23 22:42:52.551+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-23T15:42:52-0700 - 0.00 B
-2016-03-23 22:42:52.551+0000 INFO  [o.n.k.i.DiagnosticsManager]   messages.log: 2016-03-23T15:42:52-0700 - 38.37 kB
-2016-03-23 22:42:52.552+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore: 2016-03-23T15:42:52-0700 - 8.00 kB
-2016-03-23 22:42:52.552+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2016-03-23T15:42:52-0700 - 96.00 B
-2016-03-23 22:42:52.552+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.id: 2016-03-23T15:42:52-0700 - 9.00 B
-2016-03-23 22:42:52.552+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.552+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.553+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.554+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2016-03-23T15:42:52-0700 - 8.00 kB
-2016-03-23 22:42:52.555+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2016-03-23T15:42:52-0700 - 9.00 B
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2016-03-23T15:42:51-0700 - 8.00 kB
-2016-03-23 22:42:52.556+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2016-03-23T15:42:51-0700 - 9.00 B
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2016-03-23T15:42:52-0700 - 8.00 kB
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2016-03-23T15:42:52-0700 - 9.00 B
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2016-03-23T15:42:52-0700 - 16.00 B
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]   schema:
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]     label:
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]       lucene:
-2016-03-23 22:42:52.557+0000 INFO  [o.n.k.i.DiagnosticsManager]         write.lock: 2016-03-23T15:42:52-0700 - 0.00 B
-2016-03-23 22:42:52.558+0000 INFO  [o.n.k.i.DiagnosticsManager]       - Total: 2016-03-23T15:42:52-0700 - 0.00 B
-2016-03-23 22:42:52.558+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-03-23T15:42:52-0700 - 0.00 B
-2016-03-23 22:42:52.558+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-23T15:42:52-0700 - 0.00 B
-2016-03-23 22:42:52.558+0000 INFO  [o.n.k.i.DiagnosticsManager]   store_lock: 2016-03-23T15:42:51-0700 - 0.00 B
-2016-03-23 22:42:52.558+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
-2016-03-23 22:42:53.471+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
-2016-03-23 22:42:54.843+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
-2016-03-23 23:35:27.630+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:User(uuid) [provider: {key=lucene, version=1.0}]]
-2016-03-23 23:35:27.642+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
-2016-03-23 23:35:27.648+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:User(uuid) [provider: {key=lucene, version=1.0}]]
-2016-03-23 23:35:27.657+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
-2016-03-23 23:35:33.190+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Starting check pointing...
-2016-03-23 23:35:33.190+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Starting store flush...
-2016-03-23 23:35:33.197+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 5 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-23 23:35:33.198+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 5 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-23 23:35:33.199+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Store flush completed
-2016-03-23 23:35:33.199+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Starting appending check point entry into the tx log...
-2016-03-23 23:35:33.199+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Appending check point entry into the tx log completed
-2016-03-23 23:35:33.199+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [5]:  Check pointing completed
-2016-03-23 23:35:33.200+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-23 23:35:33.200+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-23 23:44:35.495+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n:`User`) RETURN n
-2016-03-23 23:44:35.496+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(n),List(LabelName(User)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,None))))
-2016-03-23 23:44:42.282+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
-2016-03-23 23:44:43.355+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting check pointing...
-2016-03-23 23:44:43.355+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting store flush...
-2016-03-23 23:44:43.358+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-23 23:44:43.359+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-23 23:44:43.366+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Store flush completed
-2016-03-23 23:44:43.367+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Starting appending check point entry into the tx log...
-2016-03-23 23:44:43.367+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Appending check point entry into the tx log completed
-2016-03-23 23:44:43.367+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14]:  Check pointing completed
-2016-03-23 23:44:43.367+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-23 23:44:43.367+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-23 23:53:53.551+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Starting check pointing...
-2016-03-23 23:53:53.552+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Starting store flush...
-2016-03-23 23:53:53.553+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-23 23:53:53.554+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-23 23:53:53.555+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Store flush completed
-2016-03-23 23:53:53.555+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Starting appending check point entry into the tx log...
-2016-03-23 23:53:53.556+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Appending check point entry into the tx log completed
-2016-03-23 23:53:53.556+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15]:  Check pointing completed
-2016-03-23 23:53:53.556+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-23 23:53:53.556+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-23 23:54:22.278+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
-2016-03-23 23:58:53.640+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Starting check pointing...
-2016-03-23 23:58:53.640+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Starting store flush...
-2016-03-23 23:58:53.646+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 16 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-23 23:58:53.646+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 16 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-23 23:58:53.647+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Store flush completed
-2016-03-23 23:58:53.647+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Starting appending check point entry into the tx log...
-2016-03-23 23:58:53.647+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Appending check point entry into the tx log completed
-2016-03-23 23:58:53.647+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16]:  Check pointing completed
-2016-03-23 23:58:53.648+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-23 23:58:53.648+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-24 00:28:32.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 92296ms.
-2016-03-24 01:22:39.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3214016ms.
-2016-03-24 02:42:23.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4777883ms.
-2016-03-24 02:43:12.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 15166ms.
-2016-03-24 02:44:18.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 29463ms.
-2016-03-24 02:45:50.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 31977ms.
-2016-03-24 02:50:46.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214012ms.
-2016-03-24 03:29:49.032+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2336781ms.
-2016-03-24 06:43:15.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 15742ms.
-2016-03-24 07:43:55.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597315ms.
-2016-03-24 08:44:42.002+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597787ms.
-2016-03-24 09:45:29.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597242ms.
-2016-03-24 10:47:31.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597304ms.
-2016-03-24 11:48:18.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597384ms.
-2016-03-24 12:49:05.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3596890ms.
-2016-03-24 13:49:51.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597551ms.
-2016-03-24 14:50:37.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3596588ms.
-2016-03-24 15:51:23.002+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3597484ms.
-2016-03-24 16:52:09.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3596543ms.
-2016-03-24 16:56:37.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 218600ms.
-2016-03-24 16:59:16.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 111043ms.
-2016-03-24 17:02:29.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 133042ms.
-2016-03-24 17:09:02.015+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 352613ms.
-2016-03-24 17:11:24.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 84703ms.
-2016-03-24 17:12:21.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 23101ms.
-2016-03-24 17:14:16.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 54986ms.
-2016-03-24 17:18:37.020+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 226929ms.
-2016-03-24 21:02:00.344+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Starting check pointing...
-2016-03-24 21:02:00.344+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Starting store flush...
-2016-03-24 21:02:00.384+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 19 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:02:00.385+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 19 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:02:00.386+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Store flush completed
-2016-03-24 21:02:00.386+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Starting appending check point entry into the tx log...
-2016-03-24 21:02:00.387+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Appending check point entry into the tx log completed
-2016-03-24 21:02:00.387+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [19]:  Check pointing completed
-2016-03-24 21:02:00.387+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-24 21:02:00.387+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-24 21:02:00.439+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n) RETURN n LIMIT 25
-2016-03-24 21:02:00.440+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,Some(Limit(SignedDecimalIntegerLiteral(25)))))))
-2016-03-24 21:02:02.277+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
-2016-03-24 21:04:12.047+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
+2016-03-28 23:45:46.503+0000 INFO  [o.n.k.i.DiagnosticsManager]   index:
+2016-03-28 23:45:46.503+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-28T16:45:46-0700 - 0.00 B
+2016-03-28 23:45:46.503+0000 INFO  [o.n.k.i.DiagnosticsManager]   messages.log: 2016-03-28T16:45:46-0700 - 38.04 kB
+2016-03-28 23:45:46.503+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore: 2016-03-28T16:45:46-0700 - 8.00 kB
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2016-03-28T16:45:46-0700 - 96.00 B
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.id: 2016-03-28T16:45:46-0700 - 9.00 B
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.504+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.505+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.505+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.505+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.505+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.505+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.506+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.507+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.508+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.508+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.508+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.508+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.508+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2016-03-28T16:45:45-0700 - 8.00 kB
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2016-03-28T16:45:45-0700 - 9.00 B
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2016-03-28T16:45:46-0700 - 16.00 B
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]   schema:
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]     label:
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]       lucene:
+2016-03-28 23:45:46.509+0000 INFO  [o.n.k.i.DiagnosticsManager]         write.lock: 2016-03-28T16:45:46-0700 - 0.00 B
+2016-03-28 23:45:46.510+0000 INFO  [o.n.k.i.DiagnosticsManager]       - Total: 2016-03-28T16:45:46-0700 - 0.00 B
+2016-03-28 23:45:46.510+0000 INFO  [o.n.k.i.DiagnosticsManager]     - Total: 2016-03-28T16:45:46-0700 - 0.00 B
+2016-03-28 23:45:46.510+0000 INFO  [o.n.k.i.DiagnosticsManager]   - Total: 2016-03-28T16:45:46-0700 - 0.00 B
+2016-03-28 23:45:46.510+0000 INFO  [o.n.k.i.DiagnosticsManager]   store_lock: 2016-03-28T16:45:45-0700 - 0.00 B
+2016-03-28 23:45:46.510+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-03-28 23:45:47.463+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2016-03-28 23:45:48.768+0000 INFO  [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2016-03-28 23:51:00.210+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:User(uuid) [provider: {key=lucene, version=1.0}]]
+2016-03-28 23:51:00.221+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-28 23:51:00.226+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:User(uuid) [provider: {key=lucene, version=1.0}]]
+2016-03-28 23:51:00.236+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-28 23:51:00.262+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:User(email) [provider: {key=lucene, version=1.0}]]
+2016-03-28 23:51:00.265+0000 INFO  [o.n.k.i.a.KernelSchemaStateStore] Schema state store has been cleared.
+2016-03-28 23:51:00.267+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:User(email) [provider: {key=lucene, version=1.0}]]
+2016-03-28 23:51:06.355+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting check pointing...
+2016-03-28 23:51:06.355+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting store flush...
+2016-03-28 23:51:06.362+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 7 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-28 23:51:06.364+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 7 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-28 23:51:06.365+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Store flush completed
+2016-03-28 23:51:06.365+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Starting appending check point entry into the tx log...
+2016-03-28 23:51:06.366+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Appending check point entry into the tx log completed
+2016-03-28 23:51:06.366+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [7]:  Check pointing completed
+2016-03-28 23:51:06.366+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-28 23:51:06.366+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-28 23:51:16.268+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 1 unique values in sample of avg size 1 taken from index containing 1 entries
+2016-03-28 23:51:24.364+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-03-28 23:51:24.365+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-03-28 23:51:26.266+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 2 unique values in sample of avg size 2 taken from index containing 2 entries
+2016-03-28 23:51:33.633+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-03-28 23:51:33.633+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-03-28 23:51:36.266+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-03-28 23:51:46.266+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 3 unique values in sample of avg size 3 taken from index containing 3 entries
+2016-03-28 23:52:07.657+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
 AND id(b) IN[0,1,2]
 RETURN r;
-2016-03-24 21:04:12.048+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
-2016-03-24 21:06:09.713+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
+2016-03-28 23:52:07.659+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-28 23:52:15.404+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH n, (n)-[r]-(p) WHERE (ID(n) = {ID_n}) RETURN r as result
+2016-03-28 23:52:15.405+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,true)), EveryPath(RelationshipChain(NodePattern(Some(Identifier(n)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(p)),List(),None,false))))),List(),Some(Where(Equals(FunctionInvocation(FunctionName(ID),false,Vector(Identifier(n))),Parameter(ID_n))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(result)))),None,None,None))))
+2016-03-28 23:56:06.456+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting check pointing...
+2016-03-28 23:56:06.457+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting store flush...
+2016-03-28 23:56:06.463+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 18 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-28 23:56:06.464+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 18 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-28 23:56:06.465+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Store flush completed
+2016-03-28 23:56:06.465+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Starting appending check point entry into the tx log...
+2016-03-28 23:56:06.466+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Appending check point entry into the tx log completed
+2016-03-28 23:56:06.466+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [18]:  Check pointing completed
+2016-03-28 23:56:06.466+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-28 23:56:06.466+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-28 23:58:49.905+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
 AND id(b) IN[0,1,2]
 RETURN r;
-2016-03-24 21:06:09.714+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
-2016-03-24 21:07:00.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting check pointing...
-2016-03-24 21:07:00.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting store flush...
-2016-03-24 21:07:00.474+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 22 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-24 21:07:00.475+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 22 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-24 21:07:00.481+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Store flush completed
-2016-03-24 21:07:00.481+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Starting appending check point entry into the tx log...
-2016-03-24 21:07:00.482+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Appending check point entry into the tx log completed
-2016-03-24 21:07:00.482+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [22]:  Check pointing completed
-2016-03-24 21:07:00.482+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-24 21:07:00.482+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-24 21:08:43.341+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n:`User`) RETURN n
-2016-03-24 21:08:43.342+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(n),List(LabelName(User)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,None))))
-2016-03-24 21:09:02.931+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
+2016-03-28 23:58:49.906+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-29 00:00:15.725+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
 AND id(b) IN[0,1,2]
 RETURN r;
-2016-03-24 21:09:02.932+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
-2016-03-24 21:12:00.547+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Starting check pointing...
-2016-03-24 21:12:00.548+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Starting store flush...
-2016-03-24 21:12:00.549+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 24 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:12:00.550+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 24 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:12:00.550+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Store flush completed
-2016-03-24 21:12:00.551+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Starting appending check point entry into the tx log...
-2016-03-24 21:12:00.551+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Appending check point entry into the tx log completed
-2016-03-24 21:12:00.551+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [24]:  Check pointing completed
-2016-03-24 21:12:00.551+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-24 21:12:00.551+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-24 21:19:10.667+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Starting check pointing...
-2016-03-24 21:19:10.668+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Starting store flush...
-2016-03-24 21:19:10.669+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 25 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-24 21:19:10.670+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 25 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Store flush completed
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Starting appending check point entry into the tx log...
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Appending check point entry into the tx log completed
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [25]:  Check pointing completed
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-24 21:19:10.676+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-24 21:19:20.856+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
+2016-03-29 00:00:15.726+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-29 00:00:43.092+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH n, (n)-[r]-(p) WHERE (ID(n) = {ID_n}) RETURN r as result
+2016-03-29 00:00:43.093+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,true)), EveryPath(RelationshipChain(NodePattern(Some(Identifier(n)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(p)),List(),None,false))))),List(),Some(Where(Equals(FunctionInvocation(FunctionName(ID),false,Vector(Identifier(n))),Parameter(ID_n))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(result)))),None,None,None))))
+2016-03-29 00:00:45.872+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH n, (n)-[r]-(p) WHERE (ID(n) = {ID_n}) RETURN r as result
+2016-03-29 00:00:45.873+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,true)), EveryPath(RelationshipChain(NodePattern(Some(Identifier(n)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(p)),List(),None,false))))),List(),Some(Where(Equals(FunctionInvocation(FunctionName(ID),false,Vector(Identifier(n))),Parameter(ID_n))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(result)))),None,None,None))))
+2016-03-29 00:00:47.735+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
 AND id(b) IN[0,1,2]
 RETURN r;
-2016-03-24 21:19:20.857+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
-2016-03-24 21:19:45.047+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH a -[r]- b WHERE id(a) IN[0,1,2]
-AND id(b) IN[0,1,2]
-RETURN r;
-2016-03-24 21:19:45.048+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
-2016-03-24 21:24:10.736+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Starting check pointing...
-2016-03-24 21:24:10.737+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Starting store flush...
-2016-03-24 21:24:10.738+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 28 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:24:10.739+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 28 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-24 21:24:10.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Store flush completed
-2016-03-24 21:24:10.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Starting appending check point entry into the tx log...
-2016-03-24 21:24:10.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Appending check point entry into the tx log completed
-2016-03-24 21:24:10.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [28]:  Check pointing completed
-2016-03-24 21:24:10.745+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-24 21:24:10.746+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 02:23:33.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1022652ms.
-2016-03-25 02:28:18.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 244840ms.
-2016-03-25 03:12:42.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2659273ms.
-2016-03-25 03:15:01.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 79653ms.
-2016-03-25 03:17:39.018+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 98640ms.
-2016-03-25 03:58:52.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 439937ms.
-2016-03-25 04:03:33.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220993ms.
-2016-03-25 04:08:12.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 202581ms.
-2016-03-25 04:12:44.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270079ms.
-2016-03-25 04:17:17.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 268542ms.
-2016-03-25 04:21:49.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269134ms.
-2016-03-25 04:26:21.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270094ms.
-2016-03-25 04:30:53.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269153ms.
-2016-03-25 04:31:56.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60139ms.
-2016-03-25 04:35:32.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214073ms.
-2016-03-25 04:40:04.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270099ms.
-2016-03-25 04:44:36.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270013ms.
-2016-03-25 04:49:08.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270100ms.
-2016-03-25 04:53:40.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270100ms.
-2016-03-25 04:58:13.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 268755ms.
-2016-03-25 05:02:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269338ms.
-2016-03-25 05:07:17.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269146ms.
-2016-03-25 05:11:49.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269051ms.
-2016-03-25 05:16:21.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 270096ms.
-2016-03-25 05:19:00.014+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 156143ms.
-2016-03-25 07:00:02.276+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 4 unique values in sample of avg size 4 taken from index containing 4 entries
-2016-03-25 07:00:07.050+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Starting check pointing...
-2016-03-25 07:00:07.050+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Starting store flush...
-2016-03-25 07:00:07.054+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 29 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 07:00:07.055+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 29 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 07:00:07.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Store flush completed
-2016-03-25 07:00:07.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Starting appending check point entry into the tx log...
-2016-03-25 07:00:07.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Appending check point entry into the tx log completed
-2016-03-25 07:00:07.058+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [29]:  Check pointing completed
-2016-03-25 07:00:07.058+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 07:00:07.058+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 07:03:51.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 185300ms.
-2016-03-25 07:08:32.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221804ms.
-2016-03-25 07:09:34.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60534ms.
-2016-03-25 07:13:18.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 152778ms.
-2016-03-25 07:14:20.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60724ms.
-2016-03-25 07:17:56.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214847ms.
-2016-03-25 07:18:58.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60725ms.
-2016-03-25 07:22:35.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213829ms.
-2016-03-25 07:24:04.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59766ms.
-2016-03-25 07:27:17.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 172754ms.
-2016-03-25 07:31:51.013+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 253747ms.
-2016-03-25 07:32:54.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60772ms.
-2016-03-25 07:36:30.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
-2016-03-25 07:37:34.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60596ms.
-2016-03-25 07:41:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212686ms.
-2016-03-25 07:42:11.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59994ms.
-2016-03-25 07:45:47.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214735ms.
-2016-03-25 07:46:49.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60837ms.
-2016-03-25 07:50:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 07:51:27.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60851ms.
-2016-03-25 07:55:03.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
-2016-03-25 07:59:35.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269793ms.
-2016-03-25 08:04:07.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269756ms.
-2016-03-25 08:05:09.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
-2016-03-25 08:08:46.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 215720ms.
-2016-03-25 08:09:49.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60491ms.
-2016-03-25 08:13:25.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 08:14:27.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60830ms.
-2016-03-25 08:18:03.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214718ms.
-2016-03-25 08:19:06.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60556ms.
-2016-03-25 08:22:42.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214725ms.
-2016-03-25 08:23:44.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60837ms.
-2016-03-25 08:27:20.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214717ms.
-2016-03-25 08:28:22.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60738ms.
-2016-03-25 08:31:58.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214831ms.
-2016-03-25 08:33:00.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60732ms.
-2016-03-25 08:36:36.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214837ms.
-2016-03-25 08:37:38.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60736ms.
-2016-03-25 08:41:14.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214835ms.
-2016-03-25 08:42:16.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60731ms.
-2016-03-25 08:45:52.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214633ms.
-2016-03-25 08:46:54.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60752ms.
-2016-03-25 08:50:30.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214731ms.
-2016-03-25 08:51:32.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60723ms.
-2016-03-25 08:55:08.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212506ms.
-2016-03-25 08:56:10.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60836ms.
-2016-03-25 08:59:46.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214732ms.
-2016-03-25 09:00:48.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60831ms.
-2016-03-25 09:04:24.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 09:05:26.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
-2016-03-25 09:09:02.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214731ms.
-2016-03-25 09:10:04.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60718ms.
-2016-03-25 09:13:40.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214630ms.
-2016-03-25 09:14:43.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60676ms.
-2016-03-25 09:18:19.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214076ms.
-2016-03-25 09:19:21.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60723ms.
-2016-03-25 09:22:57.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213579ms.
-2016-03-25 09:23:59.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60835ms.
-2016-03-25 09:27:35.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214730ms.
-2016-03-25 09:28:37.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60830ms.
-2016-03-25 09:32:13.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214739ms.
-2016-03-25 09:36:45.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269240ms.
-2016-03-25 09:37:47.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60845ms.
-2016-03-25 09:41:23.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214726ms.
-2016-03-25 09:42:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
-2016-03-25 09:46:01.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214725ms.
-2016-03-25 09:47:04.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60569ms.
-2016-03-25 09:50:40.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214721ms.
-2016-03-25 09:51:42.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59973ms.
-2016-03-25 09:55:18.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214844ms.
-2016-03-25 09:56:20.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60734ms.
-2016-03-25 09:59:56.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
-2016-03-25 10:01:00.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
-2016-03-25 10:04:35.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213840ms.
-2016-03-25 10:05:37.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60292ms.
-2016-03-25 10:09:13.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214722ms.
-2016-03-25 10:10:15.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
-2016-03-25 10:13:51.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214744ms.
-2016-03-25 10:14:53.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60723ms.
-2016-03-25 10:18:30.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 215832ms.
-2016-03-25 10:19:32.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
-2016-03-25 10:23:08.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214743ms.
-2016-03-25 10:24:12.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60825ms.
-2016-03-25 10:27:47.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212571ms.
-2016-03-25 10:28:49.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60726ms.
-2016-03-25 10:32:25.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
-2016-03-25 10:33:27.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60736ms.
-2016-03-25 10:37:03.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214207ms.
-2016-03-25 10:38:07.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60812ms.
-2016-03-25 10:41:42.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213716ms.
-2016-03-25 10:42:44.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60727ms.
-2016-03-25 10:46:20.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214827ms.
-2016-03-25 10:47:22.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60742ms.
-2016-03-25 10:50:58.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212630ms.
-2016-03-25 10:52:00.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60744ms.
-2016-03-25 10:55:36.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213176ms.
-2016-03-25 10:56:39.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60561ms.
-2016-03-25 11:00:15.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214829ms.
-2016-03-25 11:01:17.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60719ms.
-2016-03-25 11:04:53.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 11:05:55.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60848ms.
-2016-03-25 11:09:31.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
-2016-03-25 11:10:33.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60750ms.
-2016-03-25 11:14:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 11:15:11.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60854ms.
-2016-03-25 11:18:47.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214747ms.
-2016-03-25 11:19:49.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60850ms.
-2016-03-25 11:23:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214721ms.
-2016-03-25 11:24:28.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60486ms.
-2016-03-25 11:28:04.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214739ms.
-2016-03-25 11:29:06.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60745ms.
-2016-03-25 11:32:42.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214823ms.
-2016-03-25 11:33:44.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60836ms.
-2016-03-25 11:37:20.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214715ms.
-2016-03-25 11:38:22.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60833ms.
-2016-03-25 11:41:58.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214850ms.
-2016-03-25 11:43:02.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
-2016-03-25 11:46:37.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213087ms.
-2016-03-25 11:47:39.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60635ms.
-2016-03-25 11:51:15.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 11:52:17.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60834ms.
-2016-03-25 11:55:53.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214729ms.
-2016-03-25 11:56:55.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60747ms.
-2016-03-25 12:00:31.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214732ms.
-2016-03-25 12:01:33.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60828ms.
-2016-03-25 12:05:09.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214626ms.
-2016-03-25 12:06:11.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60096ms.
-2016-03-25 12:09:47.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214735ms.
-2016-03-25 12:10:49.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
-2016-03-25 12:14:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
-2016-03-25 12:15:27.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60840ms.
-2016-03-25 12:19:03.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214844ms.
-2016-03-25 12:20:05.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60731ms.
-2016-03-25 12:23:41.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214828ms.
-2016-03-25 12:24:43.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60752ms.
-2016-03-25 12:28:19.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
-2016-03-25 12:29:21.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
-2016-03-25 12:32:57.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214732ms.
-2016-03-25 12:33:59.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60825ms.
-2016-03-25 12:37:35.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212728ms.
-2016-03-25 12:38:37.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
-2016-03-25 12:42:13.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214511ms.
-2016-03-25 12:43:15.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60193ms.
-2016-03-25 12:46:51.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214739ms.
-2016-03-25 12:47:53.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60833ms.
-2016-03-25 12:51:29.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
-2016-03-25 12:52:32.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60657ms.
-2016-03-25 12:56:08.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214840ms.
-2016-03-25 12:57:10.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60731ms.
-2016-03-25 13:00:46.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
-2016-03-25 13:01:48.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60743ms.
-2016-03-25 13:05:24.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
-2016-03-25 13:06:26.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60746ms.
-2016-03-25 13:10:02.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
-2016-03-25 13:11:06.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60744ms.
-2016-03-25 13:14:41.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213736ms.
-2016-03-25 13:15:43.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60845ms.
-2016-03-25 13:19:19.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214736ms.
-2016-03-25 13:20:21.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
-2016-03-25 13:23:57.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
-2016-03-25 13:24:59.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60716ms.
-2016-03-25 13:28:35.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214726ms.
-2016-03-25 13:29:37.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60829ms.
-2016-03-25 13:33:13.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214747ms.
-2016-03-25 13:34:15.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60839ms.
-2016-03-25 13:37:51.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212851ms.
-2016-03-25 13:38:53.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60330ms.
-2016-03-25 13:42:29.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214210ms.
-2016-03-25 13:43:31.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60200ms.
-2016-03-25 13:47:07.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214631ms.
-2016-03-25 13:48:09.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60841ms.
-2016-03-25 13:51:45.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
-2016-03-25 13:52:47.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60850ms.
-2016-03-25 13:56:23.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214724ms.
-2016-03-25 13:57:25.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60726ms.
-2016-03-25 14:01:01.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214842ms.
-2016-03-25 14:02:03.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
-2016-03-25 14:05:39.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214730ms.
-2016-03-25 14:06:41.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60727ms.
-2016-03-25 14:10:17.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214725ms.
-2016-03-25 14:11:19.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60724ms.
-2016-03-25 14:14:55.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
-2016-03-25 14:15:57.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60830ms.
-2016-03-25 14:19:33.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214720ms.
-2016-03-25 14:20:35.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60827ms.
-2016-03-25 14:24:11.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214832ms.
-2016-03-25 14:28:43.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269761ms.
-2016-03-25 14:29:46.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60701ms.
-2016-03-25 14:33:22.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214738ms.
-2016-03-25 14:34:24.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60835ms.
-2016-03-25 14:38:00.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214724ms.
-2016-03-25 14:39:02.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60754ms.
-2016-03-25 14:42:38.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
-2016-03-25 14:43:40.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60824ms.
-2016-03-25 14:47:16.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214839ms.
-2016-03-25 14:48:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60725ms.
-2016-03-25 14:51:54.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214848ms.
-2016-03-25 14:52:56.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60743ms.
-2016-03-25 14:56:32.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
-2016-03-25 14:57:34.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60730ms.
-2016-03-25 15:01:10.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214196ms.
-2016-03-25 15:02:12.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60629ms.
-2016-03-25 15:05:48.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214516ms.
-2016-03-25 15:06:50.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60213ms.
-2016-03-25 15:10:26.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214733ms.
-2016-03-25 15:10:36.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 8841ms.
-2016-03-25 15:15:16.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220249ms.
-2016-03-25 15:16:18.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60477ms.
-2016-03-25 15:20:01.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 154660ms.
-2016-03-25 15:21:03.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
-2016-03-25 15:24:40.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 215848ms.
-2016-03-25 15:25:42.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60731ms.
-2016-03-25 15:29:18.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214727ms.
-2016-03-25 15:30:20.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60834ms.
-2016-03-25 15:33:56.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213262ms.
-2016-03-25 15:34:58.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60831ms.
-2016-03-25 15:38:34.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214735ms.
-2016-03-25 15:39:36.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60732ms.
-2016-03-25 15:43:12.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214756ms.
-2016-03-25 15:44:14.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60306ms.
-2016-03-25 15:47:50.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214636ms.
-2016-03-25 15:48:52.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60532ms.
-2016-03-25 15:52:28.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214200ms.
-2016-03-25 15:53:30.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60636ms.
-2016-03-25 15:57:06.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214321ms.
-2016-03-25 15:58:08.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60749ms.
-2016-03-25 16:01:44.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214644ms.
-2016-03-25 16:02:46.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60833ms.
-2016-03-25 16:06:22.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214724ms.
-2016-03-25 16:07:24.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60873ms.
-2016-03-25 16:11:00.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
-2016-03-25 16:12:02.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
-2016-03-25 16:15:38.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214829ms.
-2016-03-25 16:16:42.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60585ms.
-2016-03-25 16:20:17.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213431ms.
-2016-03-25 16:24:54.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214817ms.
-2016-03-25 16:25:56.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60637ms.
-2016-03-25 16:29:32.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
-2016-03-25 16:30:34.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
-2016-03-25 16:34:10.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214752ms.
-2016-03-25 16:35:13.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60763ms.
-2016-03-25 16:38:49.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214090ms.
-2016-03-25 16:55:02.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 967137ms.
-2016-03-25 16:59:01.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 184343ms.
-2016-03-25 17:47:21.701+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting check pointing...
-2016-03-25 17:47:21.702+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting store flush...
-2016-03-25 17:47:21.706+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 30 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 17:47:21.707+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 30 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Store flush completed
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Starting appending check point entry into the tx log...
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Appending check point entry into the tx log completed
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [30]:  Check pointing completed
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 17:47:21.713+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 17:47:22.277+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 5 unique values in sample of avg size 5 taken from index containing 5 entries
-2016-03-25 17:50:22.280+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
-2016-03-25 17:51:50.126+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n) RETURN n LIMIT 25
-2016-03-25 17:51:50.127+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,Some(Limit(SignedDecimalIntegerLiteral(25)))))))
-2016-03-25 17:51:52.279+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 7 unique values in sample of avg size 7 taken from index containing 7 entries
-2016-03-25 17:52:21.792+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting check pointing...
-2016-03-25 17:52:21.792+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting store flush...
-2016-03-25 17:52:21.798+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 33 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 17:52:21.798+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 33 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Store flush completed
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting appending check point entry into the tx log...
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Appending check point entry into the tx log completed
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Check pointing completed
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 17:52:21.799+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 17:53:02.277+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 8 unique values in sample of avg size 8 taken from index containing 8 entries
-2016-03-25 17:55:52.276+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 9 unique values in sample of avg size 9 taken from index containing 9 entries
-2016-03-25 17:57:21.888+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting check pointing...
-2016-03-25 17:57:21.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting store flush...
-2016-03-25 17:57:21.894+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 35 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 17:57:21.894+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 35 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 17:57:21.895+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Store flush completed
-2016-03-25 17:57:21.895+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Starting appending check point entry into the tx log...
-2016-03-25 17:57:21.895+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Appending check point entry into the tx log completed
-2016-03-25 17:57:21.896+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [35]:  Check pointing completed
-2016-03-25 17:57:21.896+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 17:57:21.896+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 18:48:52.277+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 10 unique values in sample of avg size 10 taken from index containing 10 entries
-2016-03-25 18:48:52.656+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting check pointing...
-2016-03-25 18:48:52.657+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting store flush...
-2016-03-25 18:48:52.661+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 36 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 18:48:52.661+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 36 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 18:48:52.662+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Store flush completed
-2016-03-25 18:48:52.662+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Starting appending check point entry into the tx log...
-2016-03-25 18:48:52.662+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Appending check point entry into the tx log completed
-2016-03-25 18:48:52.663+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [36]:  Check pointing completed
-2016-03-25 18:48:52.663+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 18:48:52.663+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 18:50:52.278+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 12 unique values in sample of avg size 12 taken from index containing 12 entries
-2016-03-25 18:53:52.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Starting check pointing...
-2016-03-25 18:53:52.745+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Starting store flush...
-2016-03-25 18:53:52.748+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 39 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 18:53:52.749+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 39 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
-2016-03-25 18:53:52.749+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Store flush completed
-2016-03-25 18:53:52.749+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Starting appending check point entry into the tx log...
-2016-03-25 18:53:52.750+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Appending check point entry into the tx log completed
-2016-03-25 18:53:52.750+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [39]:  Check pointing completed
-2016-03-25 18:53:52.750+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 18:53:52.750+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
-2016-03-25 21:09:52.244+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n:`User`) RETURN n
-2016-03-25 21:09:52.245+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(n),List(LabelName(User)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(n),Identifier(n)))),None,None,None))))
-2016-03-25 21:10:12.277+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 14 unique values in sample of avg size 14 taken from index containing 14 entries
-2016-03-25 21:10:14.869+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Starting check pointing...
-2016-03-25 21:10:14.869+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Starting store flush...
-2016-03-25 21:10:14.873+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 40 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 21:10:14.873+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 40 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Store flush completed
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Starting appending check point entry into the tx log...
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Appending check point entry into the tx log completed
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [40]:  Check pointing completed
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
-2016-03-25 21:10:14.875+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-29 00:00:47.736+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(a)),List(),None,true),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(b)),List(),None,true))))),List(),Some(Where(And(In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(a))),Collection(List(Parameter(  AUTOINT0), Parameter(  AUTOINT1), Parameter(  AUTOINT2)))),In(FunctionInvocation(FunctionName(id),false,Vector(Identifier(b))),Collection(List(Parameter(  AUTOINT3), Parameter(  AUTOINT4), Parameter(  AUTOINT5)))))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(r)))),None,None,None))))
+2016-03-29 00:01:06.557+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Starting check pointing...
+2016-03-29 00:01:06.557+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Starting store flush...
+2016-03-29 00:01:06.558+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 27 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-29 00:01:06.559+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 27 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-29 00:01:06.561+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Store flush completed
+2016-03-29 00:01:06.561+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Starting appending check point entry into the tx log...
+2016-03-29 00:01:06.562+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Appending check point entry into the tx log completed
+2016-03-29 00:01:06.562+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [27]:  Check pointing completed
+2016-03-29 00:01:06.562+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-29 00:01:06.562+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-29 00:02:39.512+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH n, (n)-[r]-(p) WHERE (ID(n) = {ID_n}) RETURN r as result
+2016-03-29 00:02:39.514+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,true)), EveryPath(RelationshipChain(NodePattern(Some(Identifier(n)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(),None,None,BOTH),NodePattern(Some(Identifier(p)),List(),None,false))))),List(),Some(Where(Equals(FunctionInvocation(FunctionName(ID),false,Vector(Identifier(n))),Parameter(ID_n))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(r),Identifier(result)))),None,None,None))))
+2016-03-29 00:06:06.651+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting check pointing...
+2016-03-29 00:06:06.652+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting store flush...
+2016-03-29 00:06:06.653+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 33 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-29 00:06:06.654+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 33 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-29 00:06:06.655+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Store flush completed
+2016-03-29 00:06:06.655+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Starting appending check point entry into the tx log...
+2016-03-29 00:06:06.656+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Appending check point entry into the tx log completed
+2016-03-29 00:06:06.656+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [33]:  Check pointing completed
+2016-03-29 00:06:06.656+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-29 00:06:06.656+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-29 00:25:16.943+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Starting check pointing...
+2016-03-29 00:25:16.944+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Starting store flush...
+2016-03-29 00:25:16.944+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 34 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-29 00:25:16.945+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 34 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-29 00:25:16.952+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Store flush completed
+2016-03-29 00:25:16.952+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Starting appending check point entry into the tx log...
+2016-03-29 00:25:16.952+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Appending check point entry into the tx log completed
+2016-03-29 00:25:16.952+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [34]:  Check pointing completed
+2016-03-29 00:25:16.953+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-29 00:25:16.953+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-29 00:30:17.033+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting check pointing...
+2016-03-29 00:30:17.033+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting store flush...
+2016-03-29 00:30:17.033+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 37 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-29 00:30:17.034+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 37 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-03-29 00:30:17.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Store flush completed
+2016-03-29 00:30:17.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Starting appending check point entry into the tx log...
+2016-03-29 00:30:17.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Appending check point entry into the tx log completed
+2016-03-29 00:30:17.040+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [37]:  Check pointing completed
+2016-03-29 00:30:17.041+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-29 00:30:17.041+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
