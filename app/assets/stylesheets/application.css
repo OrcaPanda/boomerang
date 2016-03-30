@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+// A banner for the top of the page
+
+#topmenu {
+  width: 750px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#nav {
+  width: 100%;
+  float: right;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+#nav li {
+  float: right;
+}
+
+#nav li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #180e3a;
+  border-left: 1px solid transparent;
+}
+
+#nav li a:hover {
+  color: #0b2a80;
+  background-color: #e7e7e7;
+}

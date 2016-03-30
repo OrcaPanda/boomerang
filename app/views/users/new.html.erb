@@ -1,24 +1,24 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<h1>Welcome.</h1>
 
 <%= form_for(@user) do |f| %>
 
 	<%= render 'layouts/error_messages' %>
 	
 	<%= f.label :name, "First name" %>
-	<%= f.text_field :name %>
+	<%= f.text_field :name, :placeholder => "First name"%>
 
 	<%= f.label :surname, "Last name" %>
-	<%= f.text_field :surname %>
+	<%= f.text_field :surname, :placeholder => "Last name"%>
 
 	<%= f.label :email %>
-	<%= f.email_field :email %>
+	<%= f.email_field :email, :placeholder => "Email" %>
 	
 	<%= f.label :password %>
-	<%= f.password_field :password %>
+	<%= f.password_field :password, :placeholder => "Password" %>
 	
 	<%= f.label :password_confirmation, "Confirmation" %>
-	<%= f.password_field :password_confirmation %>
+	<%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
 	
 	<%= f.submit "Create new account" %>
 <% end %>
