@@ -12,6 +12,7 @@ class User
   property :password_digest, type: String
   property :remember_digest, type: String
   property :admin, type: String
+  property :budget, type: BigDecimal, default: 100
   property :activation_digest, type: String
   property :activated, type: String
   property :activated_at, type: DateTime
@@ -24,6 +25,7 @@ class User
   has_many :in, :users, model_class: :User, rel_class: :PendingFriendRequest, unique: true
   has_many :out, :users, model_class: :User, rel_class: :PendingFriendRequest, unique: true
 
+  has_many :both, :users, model_class: :User, rel_class: :Debt, unique: true
 
 	attr_accessor :password
 
@@ -131,6 +133,9 @@ class User
 
 	def add_debt(other_user, debt_amount = 0)
 		return nil unless friends_with(other_user) && debt_amount != 0
+		
+		#if bfs returns nil, then add a new debt path
+		Debt.create(from_node:self, to_node: other_user, amount: debt_amount.to_d)
 			
 	end
 
@@ -141,22 +146,51 @@ class User
 		command_format = base_url + start_node_id.to_s + '/traverse/path'
 
 		url = URI.parse(command_format)
-		req = Net::HTTP::Post.new(url.to_s)
-		data_hash = Hash.new
+		req = Net::HTTP::Post.new(url.to_s, initheader = {'Content-Type' => 'application/json'})
+		#data_hash = Hash.new
 		
-		data_hash["order"] = "breadth_first"
-		data_hash["relationships"] = "all"
-		data_hash["uniqueness"] = "node_global"
-		data_hash["return_filter"] = 
-		
+		#data_hash["order"] = "breadth_first"
+		#data_hash["relationships"] = Hash.new
+		#data_hash["relationships"]["type"] = "FRIEND"
+		#data_hash["relationships"]["direction"] = "both"
+		#data_hash["uniqueness"] = "node_global"
+		#data_hash["relationships"] = {"direction" => "all", "type" => :DEBT}
+		#data_hash["max_depth"] = depth	
+		#data_hash["return_filter"] = 
+	
 
-		req.set_form_data(data_hash)
+		#req.set_form_data({
+		#		"order" => "breadth_first",
+		#		"relationships[type]" => "DET",
+		#		"relationships[direction]" => "both",
+		#		"uniqueness" => "node_global"		
+		#})
+
+		payload = {
+			"order" => "breadth_first",
+			"relationships" => {
+				"type" => "DEBT",
+				"direction" => "all"
+			},
+			"uniqueness" => "node_global",
+			"max_depth" => depth
+		}.to_json
+		
+		req.body = payload
 		res = Net::HTTP.start(url.host, url.port) do |http|
 			http.request(req)
 		end
 		puts res.body
 	end
 
+	def self.db_get()
+		url = URI.parse('http://localhost:7474/db/data/relationship/types')
+		req = Net::HTTP::Get.new(url.to_s)
+		res = Net::HTTP.start(url.host, url.port) do |http|
+			http.request(req)
+		end
+		puts res.body
+	end
 # PRIVATE METHODS
 
 	private
