@@ -1,4 +1,6 @@
 require 'bcrypt'
+require 'net/http'
+require 'json'
 
 class User 
   include Neo4j::ActiveNode
@@ -130,6 +132,29 @@ class User
 	def add_debt(other_user, debt_amount = 0)
 		return nil unless friends_with(other_user) && debt_amount != 0
 			
+	end
+
+	def self.debt_bfs(user_A, user_B, depth = 8)
+		base_url = 'http://localhost:7474/db/data/node/' 
+		start_node_id = user_A.neo_id		
+
+		command_format = base_url + start_node_id.to_s + '/traverse/path'
+
+		url = URI.parse(command_format)
+		req = Net::HTTP::Post.new(url.to_s)
+		data_hash = Hash.new
+		
+		data_hash["order"] = "breadth_first"
+		data_hash["relationships"] = "all"
+		data_hash["uniqueness"] = "node_global"
+		data_hash["return_filter"] = 
+		
+
+		req.set_form_data(data_hash)
+		res = Net::HTTP.start(url.host, url.port) do |http|
+			http.request(req)
+		end
+		puts res.body
 	end
 
 # PRIVATE METHODS
