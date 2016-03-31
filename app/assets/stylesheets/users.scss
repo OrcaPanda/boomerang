@@ -4,4 +4,53 @@
 
 h1 {
   font-family: "Helvetica Neue";
+  font-size: 32px;
+  position: relative;
+  left: 65px;
+}
+
+form {
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 550px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  border-radius: 6px;
+  line-height: normal;
+  height: 35px;
+  margin-top: 20px;
+  text-indent: 10px;
+}
+
+input[type=submit] {
+  width: 250px;
+  position: relative;
+  left: 65px;
+  bottom: -10px;
+  background: #9b9b9c;
+  color: #fff;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid transparent; 
+}
+
+input[type="submit"]:hover {
+  background-color: #0b33a3; 
 }
