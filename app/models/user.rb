@@ -1,6 +1,5 @@
 require 'bcrypt'
 require 'net/http'
-require 'json'
 
 class User 
   include Neo4j::ActiveNode
@@ -92,6 +91,7 @@ class User
 	end
 
 	def friends_with(other_user)
+		return false if other_user == self
 		rels.each do |relationship|
 			if(relationship.rel_type.to_s == 'FRIEND' && (relationship.start_node == other_user || relationship.end_node == other_user))
 				return true
@@ -133,38 +133,35 @@ class User
 
 	def add_debt(other_user, debt_amount = 0)
 		return nil unless friends_with(other_user) && debt_amount != 0
-		
+		debt_amount = debt_amount.to_d
 		#if bfs returns nil, then add a new debt path
-		Debt.create(from_node:self, to_node: other_user, amount: debt_amount.to_d)
-			
+		path = User.debt_bfs(self, other_user)
+		if(path == nil)
+			Debt.create(from_node:self, to_node: other_user, amount: debt_amount)
+			#NEED to add creation with negative amounts
+		else
+			index = 0
+			path["relationships"].each do |edge|
+				debt_edge = Debt.find_by_id(edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s)
+				if(debt_edge.from_node.neo_id.to_s == path["nodes"][index].match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s)
+					debt_edge.add_delta(debt_amount)
+				else 
+					debt_edge.add_delta(debt_amount*(-1))
+				end
+				index += 1
+			end
+		end
+		return debt_amount
 	end
 
 	def self.debt_bfs(user_A, user_B, depth = 8)
 		base_url = 'http://localhost:7474/db/data/node/' 
 		start_node_id = user_A.neo_id		
 
-		command_format = base_url + start_node_id.to_s + '/traverse/path'
+		command_format = base_url + start_node_id.to_s + '/path'
 
 		url = URI.parse(command_format)
 		req = Net::HTTP::Post.new(url.to_s, initheader = {'Content-Type' => 'application/json'})
-		#data_hash = Hash.new
-		
-		#data_hash["order"] = "breadth_first"
-		#data_hash["relationships"] = Hash.new
-		#data_hash["relationships"]["type"] = "FRIEND"
-		#data_hash["relationships"]["direction"] = "both"
-		#data_hash["uniqueness"] = "node_global"
-		#data_hash["relationships"] = {"direction" => "all", "type" => :DEBT}
-		#data_hash["max_depth"] = depth	
-		#data_hash["return_filter"] = 
-	
-
-		#req.set_form_data({
-		#		"order" => "breadth_first",
-		#		"relationships[type]" => "DET",
-		#		"relationships[direction]" => "both",
-		#		"uniqueness" => "node_global"		
-		#})
 
 		payload = {
 			"order" => "breadth_first",
@@ -173,14 +170,21 @@ class User
 				"direction" => "all"
 			},
 			"uniqueness" => "node_global",
-			"max_depth" => depth
-		}.to_json
+			"max_depth" => depth,
+			#"return_filter" => {
+			#	"body" => "position.endNode().getProperty('email').eql?(#{user_B.email})"
+			#}
+			"to" => base_url + user_B.neo_id.to_s,
+			"algorithm" => "shortestPath"
+		}
 		
-		req.body = payload
+		req.body = payload.to_json
 		res = Net::HTTP.start(url.host, url.port) do |http|
 			http.request(req)
 		end
-		puts res.body
+		results = JSON.parse(res.body)
+		return nil if results.key?("errors")
+		results 
 	end
 
 	def self.db_get()
@@ -191,6 +195,8 @@ class User
 		end
 		puts res.body
 	end
+# a = User.all[0];b = User.all[1];c = User.all[2];d = User.all[3];e = User.all[4]
+
 # PRIVATE METHODS
 
 	private
