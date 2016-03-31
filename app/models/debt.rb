@@ -12,14 +12,14 @@ class Debt
 	def add_delta(delta)
 		new_amount = self.amount + delta.to_d
 		if(new_amount < 0)
-			temp_property = self.from_node
-			self.from_node = self.to_node
-			self.to_node = temp_property
-			self.amount = new_amount.abs
-			self.save
-	
-			updated_debt = Debt.create()
+			updated_debt = Debt.new(created_at: self.created_at)
+			from_node = self.from_node
+			to_node = self.to_node
 			self.destroy
+			updated_debt.from_node = to_node
+			updated_debt.to_node = from_node
+			updated_debt.amount = new_amount.abs
+			updated_debt.save
 			
 		elsif(new_amount == 0)
 			self.destroy
@@ -29,5 +29,5 @@ class Debt
 		end	
 	end
 
-	def create
+	#def create
 end
