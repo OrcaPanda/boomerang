@@ -8,6 +8,7 @@ class Debt
 	to_class :User
 	
 	property :amount, type: BigDecimal
+	property :lock_by, type: String
 
 	def add_delta(delta)
 		new_amount = self.amount + delta.to_d

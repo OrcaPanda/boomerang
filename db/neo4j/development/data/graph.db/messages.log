@@ -1275,3 +1275,657 @@ Storage files: (filename : modification date - size)
 2016-03-31 23:54:14.621+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [88]:  Check pointing completed
 2016-03-31 23:54:14.621+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-03-31 23:54:14.621+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-03-31 23:59:14.694+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Starting check pointing...
+2016-03-31 23:59:14.694+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Starting store flush...
+2016-03-31 23:59:14.695+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 95 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-31 23:59:14.696+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 95 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-03-31 23:59:14.697+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Store flush completed
+2016-03-31 23:59:14.697+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Starting appending check point entry into the tx log...
+2016-03-31 23:59:14.698+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Appending check point entry into the tx log completed
+2016-03-31 23:59:14.698+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [95]:  Check pointing completed
+2016-03-31 23:59:14.698+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-03-31 23:59:14.698+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 03:11:37.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1913776ms.
+2016-04-01 03:43:55.013+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1920349ms.
+2016-04-01 03:48:36.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221782ms.
+2016-04-01 03:53:15.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 204501ms.
+2016-04-01 03:54:17.002+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60755ms.
+2016-04-01 03:57:53.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213872ms.
+2016-04-01 03:58:55.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59884ms.
+2016-04-01 04:01:17.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 139871ms.
+2016-04-01 04:06:09.013+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 241212ms.
+2016-04-01 04:58:06.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3110444ms.
+2016-04-01 05:18:46.291+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting check pointing...
+2016-04-01 05:18:46.291+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting store flush...
+2016-04-01 05:18:46.292+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 96 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 05:18:46.292+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 96 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Store flush completed
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting appending check point entry into the tx log...
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Appending check point entry into the tx log completed
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Check pointing completed
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 05:18:46.294+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 05:23:46.359+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Starting check pointing...
+2016-04-01 05:23:46.359+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Starting store flush...
+2016-04-01 05:23:46.360+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 99 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 05:23:46.361+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 99 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 05:23:46.362+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Store flush completed
+2016-04-01 05:23:46.363+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Starting appending check point entry into the tx log...
+2016-04-01 05:23:46.363+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Appending check point entry into the tx log completed
+2016-04-01 05:23:46.363+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [99]:  Check pointing completed
+2016-04-01 05:23:46.363+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 05:23:46.363+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 05:45:56.670+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Starting check pointing...
+2016-04-01 05:45:56.670+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Starting store flush...
+2016-04-01 05:45:56.670+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 100 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 05:45:56.672+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 100 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Store flush completed
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Starting appending check point entry into the tx log...
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Appending check point entry into the tx log completed
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [100]:  Check pointing completed
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 05:45:56.679+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 05:50:56.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting check pointing...
+2016-04-01 05:50:56.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting store flush...
+2016-04-01 05:50:56.739+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 102 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 05:50:56.740+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 102 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Store flush completed
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Starting appending check point entry into the tx log...
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Appending check point entry into the tx log completed
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [102]:  Check pointing completed
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 05:50:56.742+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 06:08:46.831+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-04-01 06:08:46.966+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Starting check pointing...
+2016-04-01 06:08:46.966+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Starting store flush...
+2016-04-01 06:08:46.974+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 103 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 06:08:46.974+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 103 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 06:08:46.980+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Store flush completed
+2016-04-01 06:08:46.980+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Starting appending check point entry into the tx log...
+2016-04-01 06:08:46.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Appending check point entry into the tx log completed
+2016-04-01 06:08:46.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [103]:  Check pointing completed
+2016-04-01 06:08:46.981+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 06:08:46.981+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 06:08:56.829+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-04-01 06:09:56.827+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 5 unique values in sample of avg size 5 taken from index containing 5 entries
+2016-04-01 06:10:06.824+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-04-01 06:13:47.059+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Starting check pointing...
+2016-04-01 06:13:47.059+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Starting store flush...
+2016-04-01 06:13:47.066+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 104 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 06:13:47.067+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 104 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 06:13:47.067+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Store flush completed
+2016-04-01 06:13:47.068+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Starting appending check point entry into the tx log...
+2016-04-01 06:13:47.068+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Appending check point entry into the tx log completed
+2016-04-01 06:13:47.068+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [104]:  Check pointing completed
+2016-04-01 06:13:47.068+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 06:13:47.068+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 06:22:17.219+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Starting check pointing...
+2016-04-01 06:22:17.219+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Starting store flush...
+2016-04-01 06:22:17.220+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 105 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 06:22:17.221+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 105 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Store flush completed
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Starting appending check point entry into the tx log...
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Appending check point entry into the tx log completed
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [105]:  Check pointing completed
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 06:22:17.223+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 06:27:17.322+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting check pointing...
+2016-04-01 06:27:17.322+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting store flush...
+2016-04-01 06:27:17.323+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 112 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 06:27:17.324+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 112 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 06:27:17.325+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Store flush completed
+2016-04-01 06:27:17.325+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting appending check point entry into the tx log...
+2016-04-01 06:27:17.326+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Appending check point entry into the tx log completed
+2016-04-01 06:27:17.326+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Check pointing completed
+2016-04-01 06:27:17.326+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 06:27:17.326+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 09:11:46.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7196730ms.
+2016-04-01 11:11:48.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7200857ms.
+2016-04-01 13:11:54.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7198272ms.
+2016-04-01 15:11:58.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7197954ms.
+2016-04-01 17:11:59.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7197536ms.
+2016-04-01 17:12:47.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 41584ms.
+2016-04-01 17:14:16.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 29566ms.
+2016-04-01 17:17:41.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 145722ms.
+2016-04-01 17:25:57.171+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 427ms.
+2016-04-01 17:57:31.685+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Starting check pointing...
+2016-04-01 17:57:31.686+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Starting store flush...
+2016-04-01 17:57:31.686+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 113 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 17:57:31.687+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 113 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 17:57:31.689+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Store flush completed
+2016-04-01 17:57:31.689+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Starting appending check point entry into the tx log...
+2016-04-01 17:57:31.689+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Appending check point entry into the tx log completed
+2016-04-01 17:57:31.690+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [113]:  Check pointing completed
+2016-04-01 17:57:31.690+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 17:57:31.690+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 18:02:31.767+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting check pointing...
+2016-04-01 18:02:31.767+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting store flush...
+2016-04-01 18:02:31.767+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 114 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 18:02:31.768+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 114 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 18:02:31.770+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Store flush completed
+2016-04-01 18:02:31.770+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Starting appending check point entry into the tx log...
+2016-04-01 18:02:31.770+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Appending check point entry into the tx log completed
+2016-04-01 18:02:31.770+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [114]:  Check pointing completed
+2016-04-01 18:02:31.770+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 18:02:31.771+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 18:37:22.296+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting check pointing...
+2016-04-01 18:37:22.296+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting store flush...
+2016-04-01 18:37:22.297+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 115 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 18:37:22.298+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 115 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Store flush completed
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting appending check point entry into the tx log...
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Appending check point entry into the tx log completed
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Check pointing completed
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 18:37:22.305+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 18:49:22.470+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting check pointing...
+2016-04-01 18:49:22.470+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting store flush...
+2016-04-01 18:49:22.471+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 116 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 18:49:22.471+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 116 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Store flush completed
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting appending check point entry into the tx log...
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Appending check point entry into the tx log completed
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Check pointing completed
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 18:49:22.473+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 19:05:32.731+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Starting check pointing...
+2016-04-01 19:05:32.731+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Starting store flush...
+2016-04-01 19:05:32.732+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 118 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 19:05:32.733+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 118 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Store flush completed
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Starting appending check point entry into the tx log...
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Appending check point entry into the tx log completed
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [118]:  Check pointing completed
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 19:05:32.738+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 19:10:32.823+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Starting check pointing...
+2016-04-01 19:10:32.823+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Starting store flush...
+2016-04-01 19:10:32.823+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 121 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 19:10:32.825+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 121 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-01 19:10:32.826+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Store flush completed
+2016-04-01 19:10:32.826+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Starting appending check point entry into the tx log...
+2016-04-01 19:10:32.826+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Appending check point entry into the tx log completed
+2016-04-01 19:10:32.826+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [121]:  Check pointing completed
+2016-04-01 19:10:32.827+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-01 19:10:32.827+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-01 21:15:29.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 116512ms.
+2016-04-01 21:22:02.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 360139ms.
+2016-04-01 22:26:41.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3825832ms.
+2016-04-01 22:32:55.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 340170ms.
+2016-04-01 22:34:23.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 52029ms.
+2016-04-01 22:39:02.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 219746ms.
+2016-04-01 22:43:46.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209654ms.
+2016-04-01 22:44:09.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21787ms.
+2016-04-01 22:48:49.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220750ms.
+2016-04-01 22:53:34.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 205317ms.
+2016-04-01 22:53:57.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21743ms.
+2016-04-01 22:58:37.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220724ms.
+2016-04-01 23:03:21.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 211317ms.
+2016-04-01 23:03:45.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21902ms.
+2016-04-01 23:08:25.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220694ms.
+2016-04-02 01:09:29.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7199374ms.
+2016-04-02 01:09:54.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21855ms.
+2016-04-02 01:14:34.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220761ms.
+2016-04-02 01:19:19.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207508ms.
+2016-04-02 01:19:42.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21740ms.
+2016-04-02 01:24:23.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221761ms.
+2016-04-02 01:29:02.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 257701ms.
+2016-04-02 01:33:41.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258757ms.
+2016-04-02 01:38:21.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 241297ms.
+2016-04-02 01:38:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21898ms.
+2016-04-02 01:43:25.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220736ms.
+2016-04-02 01:48:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 211833ms.
+2016-04-02 01:48:34.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21730ms.
+2016-04-02 01:53:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 211296ms.
+2016-04-02 01:53:41.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21731ms.
+2016-04-02 01:58:21.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220733ms.
+2016-04-02 02:03:05.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 206943ms.
+2016-04-02 02:03:28.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21721ms.
+2016-04-02 02:08:08.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220786ms.
+2016-04-02 02:12:52.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208215ms.
+2016-04-02 02:13:16.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21900ms.
+2016-04-02 02:17:56.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220705ms.
+2016-04-02 02:22:40.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207292ms.
+2016-04-02 02:23:03.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21730ms.
+2016-04-02 02:27:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 222688ms.
+2016-04-02 02:32:28.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208201ms.
+2016-04-02 02:32:52.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21912ms.
+2016-04-02 02:37:32.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220787ms.
+2016-04-02 02:42:16.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209649ms.
+2016-04-02 02:42:40.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21821ms.
+2016-04-02 02:47:20.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220761ms.
+2016-04-02 02:47:43.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21734ms.
+2016-04-02 02:52:27.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210941ms.
+2016-04-02 02:52:52.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22048ms.
+2016-04-02 02:57:36.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 224741ms.
+2016-04-02 03:02:15.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258649ms.
+2016-04-02 03:02:38.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21727ms.
+2016-04-02 03:07:22.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213934ms.
+2016-04-02 03:07:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21746ms.
+2016-04-02 03:12:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220710ms.
+2016-04-02 03:17:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210967ms.
+2016-04-02 03:17:35.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22505ms.
+2016-04-02 03:22:15.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220733ms.
+2016-04-02 03:26:59.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208888ms.
+2016-04-02 03:27:23.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21893ms.
+2016-04-02 03:32:07.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209700ms.
+2016-04-02 03:32:30.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21740ms.
+2016-04-02 03:37:10.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220687ms.
+2016-04-02 03:41:54.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 206578ms.
+2016-04-02 03:42:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21902ms.
+2016-04-02 03:46:58.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220766ms.
+2016-04-02 03:51:41.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208381ms.
+2016-04-02 03:52:06.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22494ms.
+2016-04-02 03:56:46.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220700ms.
+2016-04-02 03:57:09.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21738ms.
+2016-04-02 04:01:53.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212360ms.
+2016-04-02 04:02:16.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21630ms.
+2016-04-02 04:06:56.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220720ms.
+2016-04-02 04:11:40.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207052ms.
+2016-04-02 04:12:03.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21751ms.
+2016-04-02 04:16:43.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220783ms.
+2016-04-02 04:21:27.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209804ms.
+2016-04-02 04:21:51.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21886ms.
+2016-04-02 04:26:31.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220714ms.
+2016-04-02 04:31:15.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 205986ms.
+2016-04-02 04:31:39.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21866ms.
+2016-04-02 04:36:19.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220746ms.
+2016-04-02 04:41:03.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209241ms.
+2016-04-02 04:41:27.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21765ms.
+2016-04-02 04:46:11.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209737ms.
+2016-04-02 04:46:35.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21904ms.
+2016-04-02 04:51:19.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210911ms.
+2016-04-02 04:51:42.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21727ms.
+2016-04-02 04:56:22.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220730ms.
+2016-04-02 05:01:07.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207226ms.
+2016-04-02 05:01:31.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21898ms.
+2016-04-02 05:06:11.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220767ms.
+2016-04-02 05:10:55.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209882ms.
+2016-04-02 05:11:19.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21901ms.
+2016-04-02 05:16:01.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 222757ms.
+2016-04-02 05:20:46.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 205930ms.
+2016-04-02 05:21:09.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21728ms.
+2016-04-02 05:25:49.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220711ms.
+2016-04-02 05:30:33.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209028ms.
+2016-04-02 05:30:57.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22105ms.
+2016-04-02 05:35:37.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220756ms.
+2016-04-02 05:40:21.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207656ms.
+2016-04-02 05:40:44.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21740ms.
+2016-04-02 05:45:24.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220704ms.
+2016-04-02 05:50:03.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258428ms.
+2016-04-02 05:51:24.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60118ms.
+2016-04-02 05:56:08.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 211189ms.
+2016-04-02 05:56:31.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21631ms.
+2016-04-02 06:01:11.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220740ms.
+2016-04-02 06:05:55.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209044ms.
+2016-04-02 06:06:19.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21896ms.
+2016-04-02 06:10:59.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220787ms.
+2016-04-02 06:15:44.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207221ms.
+2016-04-02 06:16:08.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21874ms.
+2016-04-02 06:20:48.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220720ms.
+2016-04-02 06:25:26.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 256814ms.
+2016-04-02 06:25:49.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21738ms.
+2016-04-02 06:30:33.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214409ms.
+2016-04-02 06:30:56.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21720ms.
+2016-04-02 06:35:36.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220701ms.
+2016-04-02 06:40:20.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209979ms.
+2016-04-02 06:40:44.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21903ms.
+2016-04-02 06:45:24.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220716ms.
+2016-04-02 06:50:09.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207075ms.
+2016-04-02 06:50:33.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21862ms.
+2016-04-02 06:55:13.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220720ms.
+2016-04-02 06:59:57.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208998ms.
+2016-04-02 07:00:21.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21875ms.
+2016-04-02 07:05:05.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 211963ms.
+2016-04-02 07:05:28.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21732ms.
+2016-04-02 07:10:08.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220798ms.
+2016-04-02 07:14:47.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258530ms.
+2016-04-02 07:19:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 256695ms.
+2016-04-02 07:24:05.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 243776ms.
+2016-04-02 07:24:31.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22502ms.
+2016-04-02 07:29:11.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220704ms.
+2016-04-02 07:33:54.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207703ms.
+2016-04-02 07:34:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21904ms.
+2016-04-02 07:38:58.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220731ms.
+2016-04-02 07:43:37.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 258594ms.
+2016-04-02 07:44:58.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60082ms.
+2016-04-02 07:49:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210751ms.
+2016-04-02 07:50:08.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21747ms.
+2016-04-02 07:54:49.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221097ms.
+2016-04-02 07:55:12.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21754ms.
+2016-04-02 07:59:56.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214371ms.
+2016-04-02 08:00:19.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21732ms.
+2016-04-02 08:04:59.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220709ms.
+2016-04-02 08:09:44.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 205669ms.
+2016-04-02 08:10:08.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21894ms.
+2016-04-02 08:14:52.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210180ms.
+2016-04-02 08:15:15.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21854ms.
+2016-04-02 08:19:55.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220700ms.
+2016-04-02 08:24:38.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208032ms.
+2016-04-02 08:25:02.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21899ms.
+2016-04-02 08:29:42.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220759ms.
+2016-04-02 08:34:26.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 206252ms.
+2016-04-02 08:34:50.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21891ms.
+2016-04-02 08:39:30.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220700ms.
+2016-04-02 08:44:13.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 209194ms.
+2016-04-02 08:44:37.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21869ms.
+2016-04-02 08:49:17.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220784ms.
+2016-04-02 08:54:00.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207654ms.
+2016-04-02 08:54:24.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21901ms.
+2016-04-02 08:59:04.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220743ms.
+2016-04-02 09:03:49.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207040ms.
+2016-04-02 09:04:12.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21842ms.
+2016-04-02 09:08:52.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 220778ms.
+2016-04-02 09:13:36.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210908ms.
+2016-04-04 06:10:53.017+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 161834921ms.
+2016-04-04 06:26:21.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 315809ms.
+2016-04-04 08:38:30.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7196596ms.
+2016-04-04 10:38:34.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7199484ms.
+2016-04-04 10:38:36.463+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 424ms.
+2016-04-04 12:38:38.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7199003ms.
+2016-04-04 14:38:42.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7199217ms.
+2016-04-04 16:05:56.013+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5230002ms.
+2016-04-04 16:18:56.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 274273ms.
+2016-04-04 16:20:32.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 22298ms.
+2016-04-04 16:21:52.019+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 31617ms.
+2016-04-04 16:26:51.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 239740ms.
+2016-04-04 16:32:29.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 332169ms.
+2016-04-04 17:19:06.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2742738ms.
+2016-04-04 21:29:51.947+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Starting check pointing...
+2016-04-04 21:29:51.948+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Starting store flush...
+2016-04-04 21:29:51.949+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 123 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 21:29:51.950+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 123 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 21:29:51.956+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Store flush completed
+2016-04-04 21:29:51.956+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Starting appending check point entry into the tx log...
+2016-04-04 21:29:51.956+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Appending check point entry into the tx log completed
+2016-04-04 21:29:51.957+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [123]:  Check pointing completed
+2016-04-04 21:29:51.957+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 21:29:51.957+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 21:34:52.020+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Starting check pointing...
+2016-04-04 21:34:52.022+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Starting store flush...
+2016-04-04 21:34:52.022+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 125 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 21:34:52.023+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 125 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Store flush completed
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Starting appending check point entry into the tx log...
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Appending check point entry into the tx log completed
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [125]:  Check pointing completed
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 21:34:52.030+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 21:44:32.188+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Starting check pointing...
+2016-04-04 21:44:32.188+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Starting store flush...
+2016-04-04 21:44:32.188+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 126 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 21:44:32.189+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 126 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 21:44:32.191+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Store flush completed
+2016-04-04 21:44:32.191+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Starting appending check point entry into the tx log...
+2016-04-04 21:44:32.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Appending check point entry into the tx log completed
+2016-04-04 21:44:32.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126]:  Check pointing completed
+2016-04-04 21:44:32.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 21:44:32.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 21:49:32.259+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Starting check pointing...
+2016-04-04 21:49:32.259+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Starting store flush...
+2016-04-04 21:49:32.259+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 129 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 21:49:32.260+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 129 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 21:49:32.266+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Store flush completed
+2016-04-04 21:49:32.266+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Starting appending check point entry into the tx log...
+2016-04-04 21:49:32.267+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Appending check point entry into the tx log completed
+2016-04-04 21:49:32.267+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [129]:  Check pointing completed
+2016-04-04 21:49:32.267+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 21:49:32.267+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 22:21:32.801+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Starting check pointing...
+2016-04-04 22:21:32.802+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Starting store flush...
+2016-04-04 22:21:32.803+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 130 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 22:21:32.804+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 130 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 22:21:32.810+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Store flush completed
+2016-04-04 22:21:32.810+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Starting appending check point entry into the tx log...
+2016-04-04 22:21:32.810+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Appending check point entry into the tx log completed
+2016-04-04 22:21:32.810+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [130]:  Check pointing completed
+2016-04-04 22:21:32.810+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 22:21:32.811+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 22:26:32.878+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Starting check pointing...
+2016-04-04 22:26:32.879+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Starting store flush...
+2016-04-04 22:26:32.880+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 133 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 22:26:32.881+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 133 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 22:26:32.882+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Store flush completed
+2016-04-04 22:26:32.882+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Starting appending check point entry into the tx log...
+2016-04-04 22:26:32.882+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Appending check point entry into the tx log completed
+2016-04-04 22:26:32.883+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [133]:  Check pointing completed
+2016-04-04 22:26:32.883+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 22:26:32.883+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 22:56:53.394+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Starting check pointing...
+2016-04-04 22:56:53.396+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Starting store flush...
+2016-04-04 22:56:53.396+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 134 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 22:56:53.397+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 134 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-04 22:56:53.404+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Store flush completed
+2016-04-04 22:56:53.404+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Starting appending check point entry into the tx log...
+2016-04-04 22:56:53.404+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Appending check point entry into the tx log completed
+2016-04-04 22:56:53.404+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [134]:  Check pointing completed
+2016-04-04 22:56:53.405+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 22:56:53.405+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-04 23:01:53.478+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Starting check pointing...
+2016-04-04 23:01:53.479+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Starting store flush...
+2016-04-04 23:01:53.480+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 137 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 23:01:53.480+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 137 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-04 23:01:53.485+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Store flush completed
+2016-04-04 23:01:53.485+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Starting appending check point entry into the tx log...
+2016-04-04 23:01:53.486+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Appending check point entry into the tx log completed
+2016-04-04 23:01:53.486+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [137]:  Check pointing completed
+2016-04-04 23:01:53.486+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-04 23:01:53.486+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-05 02:48:21.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1867348ms.
+2016-04-05 03:10:05.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1296822ms.
+2016-04-05 03:14:47.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 222768ms.
+2016-04-05 03:15:35.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 14120ms.
+2016-04-05 03:26:58.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 649680ms.
+2016-04-05 03:31:40.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 222126ms.
+2016-04-05 03:48:31.018+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 947373ms.
+2016-04-05 04:55:38.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 771915ms.
+2016-04-05 05:00:19.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221125ms.
+2016-04-05 05:04:59.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 202683ms.
+2016-04-05 05:06:01.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60747ms.
+2016-04-05 05:09:37.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214841ms.
+2016-04-05 05:10:39.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60747ms.
+2016-04-05 05:14:15.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214642ms.
+2016-04-05 05:15:17.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60741ms.
+2016-04-05 05:18:53.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214835ms.
+2016-04-05 05:19:55.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
+2016-04-05 05:23:31.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214834ms.
+2016-04-05 05:24:33.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60723ms.
+2016-04-05 05:28:09.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214734ms.
+2016-04-05 05:29:11.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60824ms.
+2016-04-05 05:32:47.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214744ms.
+2016-04-05 05:33:50.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60783ms.
+2016-04-05 05:37:26.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214722ms.
+2016-04-05 05:38:29.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60528ms.
+2016-04-05 05:42:05.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213800ms.
+2016-04-05 05:43:07.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60717ms.
+2016-04-05 05:46:43.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214732ms.
+2016-04-05 05:47:46.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60796ms.
+2016-04-05 05:51:22.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214724ms.
+2016-04-05 05:52:24.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60854ms.
+2016-04-05 05:56:00.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214718ms.
+2016-04-05 05:57:02.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60738ms.
+2016-04-05 06:00:38.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212527ms.
+2016-04-05 06:01:40.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60831ms.
+2016-04-05 06:05:16.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
+2016-04-05 06:06:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60835ms.
+2016-04-05 06:09:54.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
+2016-04-05 06:10:56.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60857ms.
+2016-04-05 06:14:32.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213469ms.
+2016-04-05 06:15:34.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60828ms.
+2016-04-05 06:19:10.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214744ms.
+2016-04-05 06:20:12.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60720ms.
+2016-04-05 06:23:48.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214736ms.
+2016-04-05 06:24:50.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60833ms.
+2016-04-05 06:28:26.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214722ms.
+2016-04-05 06:29:29.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60767ms.
+2016-04-05 06:33:05.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214847ms.
+2016-04-05 06:34:07.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60739ms.
+2016-04-05 06:37:43.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214840ms.
+2016-04-05 06:38:45.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60720ms.
+2016-04-05 06:42:21.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214837ms.
+2016-04-05 06:43:23.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60639ms.
+2016-04-05 06:46:59.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214855ms.
+2016-04-05 06:48:01.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
+2016-04-05 06:51:37.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
+2016-04-05 06:52:39.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60754ms.
+2016-04-05 06:53:58.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 77837ms.
+2016-04-05 06:58:41.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 210688ms.
+2016-04-05 06:59:43.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60625ms.
+2016-04-05 07:03:20.105+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214858ms.
+2016-04-05 07:07:51.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269744ms.
+2016-04-05 07:08:53.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
+2016-04-05 07:12:29.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214752ms.
+2016-04-05 07:13:31.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60737ms.
+2016-04-05 07:17:07.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214084ms.
+2016-04-05 07:18:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 07:21:46.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213752ms.
+2016-04-05 07:22:49.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60325ms.
+2016-04-05 07:26:25.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214842ms.
+2016-04-05 07:27:27.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 07:31:03.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214843ms.
+2016-04-05 07:32:06.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60041ms.
+2016-04-05 07:35:42.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214724ms.
+2016-04-05 07:36:44.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60187ms.
+2016-04-05 07:40:20.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214096ms.
+2016-04-05 07:41:23.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60780ms.
+2016-04-05 07:44:59.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214639ms.
+2016-04-05 07:46:01.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60837ms.
+2016-04-05 07:49:37.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214736ms.
+2016-04-05 07:50:39.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60846ms.
+2016-04-05 09:40:30.014+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6589744ms.
+2016-04-05 09:45:11.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 221715ms.
+2016-04-05 09:49:50.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 199421ms.
+2016-04-05 09:50:53.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60528ms.
+2016-04-05 09:54:29.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214849ms.
+2016-04-05 09:55:31.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60736ms.
+2016-04-05 09:59:07.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214832ms.
+2016-04-05 10:00:09.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
+2016-04-05 10:03:45.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214192ms.
+2016-04-05 10:04:47.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60103ms.
+2016-04-05 10:08:23.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213775ms.
+2016-04-05 10:09:25.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60744ms.
+2016-04-05 10:13:01.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214721ms.
+2016-04-05 10:14:03.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60837ms.
+2016-04-05 10:17:39.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214726ms.
+2016-04-05 10:18:41.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60422ms.
+2016-04-05 10:22:17.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214733ms.
+2016-04-05 10:23:20.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60776ms.
+2016-04-05 10:26:56.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214729ms.
+2016-04-05 10:27:58.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60743ms.
+2016-04-05 10:31:34.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214630ms.
+2016-04-05 10:32:37.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60758ms.
+2016-04-05 10:36:13.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214733ms.
+2016-04-05 10:37:16.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60776ms.
+2016-04-05 10:40:52.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214726ms.
+2016-04-05 10:41:54.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60826ms.
+2016-04-05 10:45:30.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214749ms.
+2016-04-05 10:46:32.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60836ms.
+2016-04-05 10:50:08.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213464ms.
+2016-04-05 10:51:10.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60645ms.
+2016-04-05 10:54:46.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
+2016-04-05 10:55:50.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60830ms.
+2016-04-05 10:59:25.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213635ms.
+2016-04-05 11:00:27.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60835ms.
+2016-04-05 11:04:03.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214738ms.
+2016-04-05 11:05:05.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60843ms.
+2016-04-05 11:08:41.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214826ms.
+2016-04-05 11:09:43.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60750ms.
+2016-04-05 11:13:19.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214749ms.
+2016-04-05 11:14:21.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60717ms.
+2016-04-05 11:17:57.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214831ms.
+2016-04-05 11:18:59.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60732ms.
+2016-04-05 11:22:35.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214833ms.
+2016-04-05 11:23:38.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60794ms.
+2016-04-05 11:27:14.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214737ms.
+2016-04-05 11:28:16.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
+2016-04-05 11:31:52.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214832ms.
+2016-04-05 11:32:54.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60736ms.
+2016-04-05 11:36:30.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214856ms.
+2016-04-05 11:37:32.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60724ms.
+2016-04-05 11:41:08.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214852ms.
+2016-04-05 11:42:10.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60763ms.
+2016-04-05 11:45:46.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214836ms.
+2016-04-05 11:46:48.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60737ms.
+2016-04-05 11:50:24.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214834ms.
+2016-04-05 11:51:26.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60730ms.
+2016-04-05 11:55:02.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214844ms.
+2016-04-05 11:56:04.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60747ms.
+2016-04-05 11:59:40.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214830ms.
+2016-04-05 12:00:42.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60726ms.
+2016-04-05 12:04:18.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214633ms.
+2016-04-05 12:05:20.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60756ms.
+2016-04-05 12:08:56.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214844ms.
+2016-04-05 12:09:58.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 12:13:34.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214828ms.
+2016-04-05 12:14:36.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
+2016-04-05 12:18:12.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214839ms.
+2016-04-05 12:19:14.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60744ms.
+2016-04-05 12:22:50.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214845ms.
+2016-04-05 12:23:52.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
+2016-04-05 12:27:28.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214535ms.
+2016-04-05 12:28:30.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
+2016-04-05 12:32:06.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214852ms.
+2016-04-05 12:33:08.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60740ms.
+2016-04-05 12:36:44.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214833ms.
+2016-04-05 12:37:46.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60844ms.
+2016-04-05 12:41:22.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214728ms.
+2016-04-05 12:42:24.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60742ms.
+2016-04-05 12:46:00.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214843ms.
+2016-04-05 12:47:02.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60730ms.
+2016-04-05 12:50:38.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214841ms.
+2016-04-05 12:51:40.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 12:55:16.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214847ms.
+2016-04-05 12:56:18.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60738ms.
+2016-04-05 12:59:54.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214827ms.
+2016-04-05 13:00:56.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60733ms.
+2016-04-05 13:04:32.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214832ms.
+2016-04-05 13:05:34.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60859ms.
+2016-04-05 13:09:10.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212733ms.
+2016-04-05 13:10:12.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60204ms.
+2016-04-05 13:13:49.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 215096ms.
+2016-04-05 13:14:51.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 13:18:27.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214722ms.
+2016-04-05 13:19:29.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60828ms.
+2016-04-05 13:23:05.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214741ms.
+2016-04-05 13:24:07.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60839ms.
+2016-04-05 13:27:43.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214725ms.
+2016-04-05 13:28:45.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60738ms.
+2016-04-05 13:32:21.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214851ms.
+2016-04-05 13:33:23.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60840ms.
+2016-04-05 13:36:59.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214752ms.
+2016-04-05 13:38:01.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60641ms.
+2016-04-05 13:41:37.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214753ms.
+2016-04-05 13:42:39.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60711ms.
+2016-04-05 13:46:15.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214744ms.
+2016-04-05 13:47:17.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60834ms.
+2016-04-05 13:50:53.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214641ms.
+2016-04-05 13:51:55.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60736ms.
+2016-04-05 13:55:31.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214738ms.
+2016-04-05 13:56:33.005+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
+2016-04-05 14:00:09.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214757ms.
+2016-04-05 14:01:11.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60637ms.
+2016-04-05 14:04:47.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214730ms.
+2016-04-05 14:05:49.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
+2016-04-05 14:09:25.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214750ms.
+2016-04-05 14:10:27.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60735ms.
+2016-04-05 14:14:03.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214746ms.
+2016-04-05 14:15:05.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60838ms.
+2016-04-05 14:18:41.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214723ms.
+2016-04-05 14:19:43.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60853ms.
+2016-04-05 14:23:19.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214830ms.
+2016-04-05 14:24:21.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60729ms.
+2016-04-05 14:27:57.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 213792ms.
+2016-04-05 14:28:59.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60725ms.
+2016-04-05 14:32:35.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214837ms.
+2016-04-05 14:33:37.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60728ms.
+2016-04-05 14:37:13.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 214761ms.
+2016-04-05 14:38:15.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 60738ms.
+2016-04-05 16:26:33.016+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6496732ms.
+2016-04-05 16:28:40.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 67738ms.
+2016-04-05 16:38:42.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 467952ms.
+2016-04-05 16:43:27.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 225089ms.
+2016-04-05 17:10:15.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1602050ms.
+2016-04-05 18:02:21.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 77925ms.
+2016-04-05 18:03:09.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 15040ms.
+2016-04-05 19:08:03.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 46402ms.
+2016-04-05 19:13:31.017+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 289626ms.

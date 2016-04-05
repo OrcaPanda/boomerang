@@ -65,9 +65,9 @@ class User
 	
 
 # FRIENDSHIP FORMING AND MANAGING
-	
+# NEED TO ADD TRANSACTION WRAPPING	
 	def request_friend_with(other_user)
-		return false if(friends_with(other_user) || self == other_user)
+		return false if(self == other_user || friends_with(other_user))
 		created_new_friendship = false
 		pending_friend_requests.each do |relationship|
 			if relationship.from_node == other_user
@@ -131,27 +131,79 @@ class User
 
 # DEBT CREATION AND MANAGING
 
+	#def add_debt(other_user, debt_amount = 0)
+	#	return nil unless friends_with(other_user) && debt_amount > 0
+	#	debt_amount = debt_amount.to_d
+	#	#if bfs returns nil, then add a new debt path
+	#	path = User.debt_bfs(self, other_user)
+	#	if(path == nil)
+	#		Debt.create(from_node:self, to_node: other_user, amount: debt_amount)
+	#	else
+	#		index = 0
+	#		debt_path = Array.new
+	#		path["relationships"].each do |edge|
+	#			debt_path << edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s
+	#		end
+	#		#If none of the locks are set, then set them all, or return nil
+	#		DBSession.query("START n= node(#{debt_path.join(", ")}) n.lock_by = #{self.uuid.to_s}")
+
+	#			puts "Paused"
+	#			blah = gets
+	#			#Need to check if Debt.find_by_id finds anytime for concurrency issue. Debt might be destroyed from other transactions. 
+	#	#		begin
+	#	#			debt_edge = Debt.find_by_id(edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s)
+	#	#			if(debt_edge.from_node.neo_id.to_s == path["nodes"][index].match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s)
+	#	#				debt_edge.add_delta(debt_amount)
+	#	#			else 
+	#	#				debt_edge.add_delta(debt_amount*(-1))
+	#	#			end
+	#	#			index += 1
+	#	#		rescue NoMethodError
+	#	#			#If there is an exception, then try to find a new debt path recursively
+	#	#			add_debt(other_user, debt_amount)
+	#	#		end
+	#	#	end
+	#	end
+	#	return debt_amount
+	#end
+
 	def add_debt(other_user, debt_amount = 0)
-		return nil unless friends_with(other_user) && debt_amount != 0
+		return nil unless debt_amount > 0 && friends_with(other_user)
 		debt_amount = debt_amount.to_d
-		#if bfs returns nil, then add a new debt path
 		path = User.debt_bfs(self, other_user)
-		if(path == nil)
-			Debt.create(from_node:self, to_node: other_user, amount: debt_amount)
-			#NEED to add creation with negative amounts
-		else
-			index = 0
-			path["relationships"].each do |edge|
-				debt_edge = Debt.find_by_id(edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s)
-				if(debt_edge.from_node.neo_id.to_s == path["nodes"][index].match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s)
-					debt_edge.add_delta(debt_amount)
-				else 
-					debt_edge.add_delta(debt_amount*(-1))
+			if(path == nil)
+				Debt.create(from_node:self, to_node: other_user, amount: debt_amount)
+			else
+				index = 0
+				debt_path = Array.new
+				path["relationships"].each do |edge|
+					debt_path << edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s
 				end
-				index += 1
+				#grab mutex on the affected relationships and/or nodes
+				debughere('grab mutex')						
+				begin
+					tx = Neo4j::Transaction.new
+					debughere('opened transaction')
+					debt_path.each do |edge|
+						debughere('one edge')
+						debt_edge = Debt.find_by_id(edge)
+						if(debt_edge.from_node.neo_id.to_s == path["nodes"][index].match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s)
+							debt_edge.add_delta(debt_amount)
+						else 
+							debt_edge.add_delta(debt_amount*(-1))
+						end
+						index += 1
+					end
+					debughere('finished adding debt')
+				rescue Exception
+					puts 'no method error in add debt'
+					tx.failure
+					#add_debt(other_user, debt_amount)
+				ensure
+					tx.close
+				end		
+				#release mutex
 			end
-		end
-		return debt_amount
 	end
 
 	def self.debt_bfs(user_A, user_B, depth = 8)
@@ -197,6 +249,14 @@ class User
 	end
 # a = User.all[0];b = User.all[1];c = User.all[2];d = User.all[3];e = User.all[4]
 
+	def debughere(message)
+		puts message unless message == nil
+		a = gets
+	end
+
+	class DebtNonExistentError < NoMethodError
+	#Exception for in case a debt is deleted before the debt tree can be evaluated
+	end
 # PRIVATE METHODS
 
 	private

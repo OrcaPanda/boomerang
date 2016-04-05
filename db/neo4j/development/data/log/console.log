@@ -20,3 +20,5 @@
 2016-03-31 10:47:09.064-0700 INFO  Mounting static content at /webadmin
 2016-03-31 10:47:09.113-0700 INFO  Mounting static content at /browser
 2016-03-31 10:47:10.257-0700 INFO  Remote interface ready and available at http://localhost:7474/
+2016-04-04 14:48:38.769-0700 INFO  Transaction with id 400 has been automatically rolled back.
+2016-04-04 15:23:08.768-0700 INFO  Transaction with id 408 has been automatically rolled back.
