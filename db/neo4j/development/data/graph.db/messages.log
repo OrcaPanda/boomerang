@@ -2698,3 +2698,120 @@ Storage files: (filename : modification date - size)
 2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Check pointing completed
 2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 08:54:57.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6219065ms.
+2016-04-07 10:11:19.017+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4578847ms.
+2016-04-07 10:11:19.095+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Starting check pointing...
+2016-04-07 10:11:19.095+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Starting store flush...
+2016-04-07 10:11:19.095+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 264 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 10:11:20.111+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 264 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 10:11:20.117+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Store flush completed
+2016-04-07 10:11:20.118+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Starting appending check point entry into the tx log...
+2016-04-07 10:11:20.118+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Appending check point entry into the tx log completed
+2016-04-07 10:11:20.118+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [264]:  Check pointing completed
+2016-04-07 10:11:20.118+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 10:11:20.118+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 10:13:51.970+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 143000ms.
+2016-04-07 10:18:35.384+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 245449ms.
+2016-04-07 10:19:44.452+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62156ms.
+2016-04-07 10:23:20.394+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208139ms.
+2016-04-07 10:24:30.495+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62034ms.
+2016-04-07 10:28:05.386+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207095ms.
+2016-04-07 10:29:15.403+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62059ms.
+2016-04-07 10:32:50.384+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207220ms.
+2016-04-07 10:34:00.370+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 61997ms.
+2016-04-07 10:37:35.365+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207106ms.
+2016-04-07 10:38:45.262+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62032ms.
+2016-04-07 10:38:45.639+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 255ms.
+2016-04-07 10:42:20.396+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207065ms.
+2016-04-07 10:43:29.225+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62003ms.
+2016-04-07 10:47:05.244+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207976ms.
+2016-04-07 10:48:15.307+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62007ms.
+2016-04-07 10:51:50.305+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207044ms.
+2016-04-07 10:53:00.305+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62072ms.
+2016-04-07 10:56:35.370+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207083ms.
+2016-04-07 11:01:14.291+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 269006ms.
+2016-04-07 11:02:23.317+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62064ms.
+2016-04-07 11:05:59.318+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 208076ms.
+2016-04-07 11:07:09.423+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62001ms.
+2016-04-07 11:10:44.280+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207051ms.
+2016-04-07 11:11:54.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62024ms.
+2016-04-07 11:15:29.332+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 207021ms.
+2016-04-07 11:16:39.222+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 62004ms.
+2016-04-07 13:16:49.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7201091ms.
+2016-04-07 15:16:59.345+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7200024ms.
+2016-04-07 16:18:05.369+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3657971ms.
+2016-04-07 16:23:01.342+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 257798ms.
+2016-04-07 16:39:35.232+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 973447ms.
+2016-04-07 16:45:02.281+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 289688ms.
+2016-04-07 17:25:44.704+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (f)-[r:PENDING_DEBT]->(t) RETURN id(r),r.amount,id(f),id(t) ORDER BY r.created_at ASC LIMIT 1
+2016-04-07 17:25:44.706+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(RelationshipChain(NodePattern(Some(Identifier(f)),List(),None,false),RelationshipPattern(Some(Identifier(r)),false,List(RelTypeName(PENDING_DEBT)),None,None,OUTGOING),NodePattern(Some(Identifier(t)),List(),None,false))))),List(),None), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(r),Identifier(r)), AliasedReturnItem(FunctionInvocation(FunctionName(id),false,Vector(Identifier(r))),Identifier(  FRESHID39)), AliasedReturnItem(Property(Identifier(r),PropertyKeyName(amount)),Identifier(  FRESHID47)), AliasedReturnItem(FunctionInvocation(FunctionName(id),false,Vector(Identifier(f))),Identifier(  FRESHID54)), AliasedReturnItem(FunctionInvocation(FunctionName(id),false,Vector(Identifier(t))),Identifier(  FRESHID60)))),None,None,None,None), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(  FRESHID39),Identifier(  FRESHID39)), AliasedReturnItem(Identifier(  FRESHID47),Identifier(  FRESHID47)), AliasedReturnItem(Identifier(  FRESHID54),Identifier(  FRESHID54)), AliasedReturnItem(Identifier(  FRESHID60),Identifier(  FRESHID60)), AliasedReturnItem(Property(Identifier(r),PropertyKeyName(created_at)),Identifier(  FRESHID77)))),Some(OrderBy(Vector(AscSortItem(Identifier(  FRESHID77))))),None,Some(Limit(SignedDecimalIntegerLiteral(1))),None), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(  FRESHID39),Identifier(  FRESHID39)), AliasedReturnItem(Identifier(  FRESHID47),Identifier(  FRESHID47)), AliasedReturnItem(Identifier(  FRESHID54),Identifier(  FRESHID54)), AliasedReturnItem(Identifier(  FRESHID60),Identifier(  FRESHID60)))),None,None,None,None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(  FRESHID39),Identifier(id(r))), AliasedReturnItem(Identifier(  FRESHID47),Identifier(r.amount)), AliasedReturnItem(Identifier(  FRESHID54),Identifier(id(f))), AliasedReturnItem(Identifier(  FRESHID60),Identifier(id(t))))),None,None,None))))
+2016-04-07 17:45:03.048+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Starting check pointing...
+2016-04-07 17:45:03.048+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Starting store flush...
+2016-04-07 17:45:03.056+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 265 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 17:45:03.056+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 265 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 17:45:03.089+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Store flush completed
+2016-04-07 17:45:03.093+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Starting appending check point entry into the tx log...
+2016-04-07 17:45:03.096+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Appending check point entry into the tx log completed
+2016-04-07 17:45:03.096+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [265]:  Check pointing completed
+2016-04-07 17:45:03.096+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 17:45:03.096+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 17:45:04.651+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-04-07 17:45:14.653+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 6 unique values in sample of avg size 6 taken from index containing 6 entries
+2016-04-07 20:16:14.394+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-04-07 20:16:14.395+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-04-07 20:16:14.649+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 7 unique values in sample of avg size 7 taken from index containing 7 entries
+2016-04-07 20:16:15.434+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Starting check pointing...
+2016-04-07 20:16:15.434+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Starting store flush...
+2016-04-07 20:16:15.440+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 266 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 20:16:15.441+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 266 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 20:16:15.442+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Store flush completed
+2016-04-07 20:16:15.442+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Starting appending check point entry into the tx log...
+2016-04-07 20:16:15.443+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Appending check point entry into the tx log completed
+2016-04-07 20:16:15.443+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [266]:  Check pointing completed
+2016-04-07 20:16:15.443+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 20:16:15.443+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 20:16:24.648+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 7 unique values in sample of avg size 7 taken from index containing 7 entries
+2016-04-07 21:18:29.820+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-04-07 21:18:29.821+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-04-07 21:18:29.970+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (n:`User`) WHERE (n.uuid = {n_uuid}) RETURN n ORDER BY n.uuid LIMIT {limit_1}
+2016-04-07 21:18:29.971+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(n)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(n),List(LabelName(User))),Equals(Property(Identifier(n),PropertyKeyName(uuid)),Parameter(n_uuid)))))), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(n),Identifier(  FRESHID50)))),None,None,None,None), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(  FRESHID50),Identifier(  FRESHID50)), AliasedReturnItem(Property(Identifier(  FRESHID50),PropertyKeyName(uuid)),Identifier(  FRESHID63)))),Some(OrderBy(Vector(AscSortItem(Identifier(  FRESHID63))))),None,Some(Limit(Parameter(limit_1))),None), With(false,ReturnItems(false,Vector(AliasedReturnItem(Identifier(  FRESHID50),Identifier(  FRESHID50)))),None,None,None,None), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(  FRESHID50),Identifier(n)))),None,None,None))))
+2016-04-07 21:18:34.645+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 8 unique values in sample of avg size 8 taken from index containing 8 entries
+2016-04-07 21:18:36.466+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting check pointing...
+2016-04-07 21:18:36.466+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting store flush...
+2016-04-07 21:18:36.474+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 267 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 21:18:36.474+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 267 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 21:18:36.480+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Store flush completed
+2016-04-07 21:18:36.480+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting appending check point entry into the tx log...
+2016-04-07 21:18:36.481+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Appending check point entry into the tx log completed
+2016-04-07 21:18:36.481+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Check pointing completed
+2016-04-07 21:18:36.481+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 21:18:36.481+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 21:18:44.645+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 8 unique values in sample of avg size 8 taken from index containing 8 entries
+2016-04-07 21:23:26.804+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-04-07 21:23:26.804+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-04-07 21:23:34.646+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 9 unique values in sample of avg size 9 taken from index containing 9 entries
+2016-04-07 21:23:36.562+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Starting check pointing...
+2016-04-07 21:23:36.562+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Starting store flush...
+2016-04-07 21:23:36.568+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 268 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 21:23:36.569+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 268 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Store flush completed
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Starting appending check point entry into the tx log...
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Appending check point entry into the tx log completed
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [268]:  Check pointing completed
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 21:23:36.570+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 21:23:44.646+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 9 unique values in sample of avg size 9 taken from index containing 9 entries
+2016-04-07 21:23:46.839+0000 INFO  [o.n.c.i.ServerExecutionEngine] Discarded stale query from the query cache: CYPHER 2.3 MATCH (result:`User`) WHERE (result.email =~ {result_email}) RETURN COUNT(result) AS count
+2016-04-07 21:23:46.840+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(result)),List(),None,false)))),List(),Some(Where(And(HasLabels(Identifier(result),List(LabelName(User))),RegexMatch(Property(Identifier(result),PropertyKeyName(email)),Parameter(result_email)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(FunctionInvocation(FunctionName(COUNT),false,Vector(Identifier(result))),Identifier(count)))),None,None,None))))
+2016-04-07 21:24:24.649+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(uuid) with 10 unique values in sample of avg size 10 taken from index containing 10 entries
+2016-04-07 21:24:34.649+0000 INFO  [o.n.k.i.a.i.s.OnlineIndexSamplingJob] Sampled index :User(email) with 10 unique values in sample of avg size 10 taken from index containing 10 entries
+2016-04-07 21:28:36.648+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Starting check pointing...
+2016-04-07 21:28:36.648+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Starting store flush...
+2016-04-07 21:28:36.656+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 269 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 21:28:36.656+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 269 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 21:28:36.657+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Store flush completed
+2016-04-07 21:28:36.657+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Starting appending check point entry into the tx log...
+2016-04-07 21:28:36.657+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Appending check point entry into the tx log completed
+2016-04-07 21:28:36.657+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [269]:  Check pointing completed
+2016-04-07 21:28:36.658+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 21:28:36.658+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
