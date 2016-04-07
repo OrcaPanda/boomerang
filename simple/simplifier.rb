@@ -11,13 +11,16 @@ def simplify()
 	from_id = group[2]
 	to_id = group[3]
 	path = debt_bfs(from_id, to_id)
-	if path.empty?
+	if path.nil? || path.empty?
 		create_debt(from_id, to_id, amount)
-	else
-		path.each do |edge|
-			update_debt(edge, amount) #check for directionality. If inline, add, else subtract. Fix in update_amount
+	else	
+		index = 0
+		path['edges'].each do |edge|
+			update_debt(edge, path['nodes'][index], amount) #check for directionality. If inline, add, else subtract. Fix in update_amount
+		index += 1
 		end
 	end
+	destroy_rel(pending_id)
 end
 
 def retrieve_pending()
@@ -74,20 +77,41 @@ def create_debt(user_a_id, user_b_id, amount)
 	result != nil
 end
 
-def update_debt(id, delta)
-	relative_url = 'db/data/relationship/' + id.to_s + '/properties/amount'
+def update_debt(id,from_node, delta)
+	#relative_url = 'db/data/relationship/' + id.to_s + '/properties/amount'
+	relative_url = 'db/data/node/' + from_node.to_s + '/relationships/all'
 	result = server_request('GET', relative_url)
-	#print "Result from server_request is: "
-	#puts result
+	#puts "Result from server_request is: "
 	return false if result == nil
-	result = result.match(/(?!")(.*)(?=")/).to_s
+	inline = false
+	current_amount = 0
+	result.each do |edge|
+		if edge["metadata"]["id"].to_s == id.to_s
+			current_amount = edge["data"]["amount"]
+			if edge["start"].match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s == from_node.to_s
+				inline = true
+			end
+			break
+		end
+	end
+	if inline
+		
+	#result = result.match(/(?!")(.*)(?=")/).to_s
 	#print "Post match result is: "
 	#puts result
-	new_amount = BigDecimal.new(result) + BigDecimal(delta.to_s)
-	payload = new_amount.to_s
+		new_amount = BigDecimal.new(current_amount) + BigDecimal(delta.to_s)
+	else
+		new_amount = BigDecimal.new(current_amount) - BigDecimal(delta.to_s)
+	end
+	if new_amount == BigDecimal(0)
+		destroy_rel(id)
+	else
+		payload = new_amount.to_s
 	#print "Payload is: "
 	#puts payload
-	server_request('PUT', relative_url, payload)
+		relative_url = 'db/data/relationship/' + id.to_s + '/properties/amount'
+		server_request('PUT', relative_url, payload)
+	end
 	return true
 end
 
@@ -107,11 +131,18 @@ def debt_bfs(user_a_id, user_b_id, depth = 8)
 		"algorithm" => "shortestPath"
 	}
 	result = server_request('POST',relative_url, payload)
+	#p result
+	return nil if result.nil?
 	debt_path = Array.new
+	debt_node = Array.new
 	result["relationships"].each do |edge|
 		debt_path << edge.match(/(?<=http:\/\/localhost:7474\/db\/data\/relationship\/).+/).to_s
 	end
-	return debt_path
+	result["nodes"].each do |node|
+		debt_node << node.match(/(?<=http:\/\/localhost:7474\/db\/data\/node\/).+/).to_s
+	end
+	path = {'nodes' => debt_node, 'edges' => debt_path}
+	return path
 end
 
 def server_request(verb, relative_url, json_payload = nil)
@@ -137,11 +168,11 @@ def server_request(verb, relative_url, json_payload = nil)
 	return nil if res.body == nil
 	begin
 		result = JSON.parse(res.body)
-		result = nil if result.key?("errors") && !result["errors"].empty?
+		result = nil if (result.is_a?(Hash) && result.key?("errors") && !result["errors"].empty?)
 	rescue JSON::ParserError
 		result = res.body
 	end
 	return result
 end
 
-puts retrieve_pending()
+simplify()

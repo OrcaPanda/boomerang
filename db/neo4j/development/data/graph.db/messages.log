@@ -2660,3 +2660,41 @@ Storage files: (filename : modification date - size)
 2016-04-07 05:10:49.236+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [250]:  Check pointing completed
 2016-04-07 05:10:49.237+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-04-07 05:10:49.237+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 05:35:12.006+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 21702ms.
+2016-04-07 05:52:17.004+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 986964ms.
+2016-04-07 05:55:08.014+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 137826ms.
+2016-04-07 05:59:47.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 245283ms.
+2016-04-07 06:00:49.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59977ms.
+2016-04-07 06:04:25.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 212825ms.
+2016-04-07 06:05:27.008+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 59876ms.
+2016-04-07 06:06:11.014+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 42826ms.
+2016-04-07 06:12:44.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Starting check pointing...
+2016-04-07 06:12:44.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Starting store flush...
+2016-04-07 06:12:44.429+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 251 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 06:12:44.430+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 251 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 06:12:44.431+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Store flush completed
+2016-04-07 06:12:44.431+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Starting appending check point entry into the tx log...
+2016-04-07 06:12:44.432+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Appending check point entry into the tx log completed
+2016-04-07 06:12:44.432+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [251]:  Check pointing completed
+2016-04-07 06:12:44.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 06:12:44.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 07:03:25.334+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Starting check pointing...
+2016-04-07 07:03:25.335+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Starting store flush...
+2016-04-07 07:03:25.335+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 252 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 07:03:25.336+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 252 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b].
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Store flush completed
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Starting appending check point entry into the tx log...
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Appending check point entry into the tx log completed
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [252]:  Check pointing completed
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 07:03:25.337+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-07 07:08:25.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting check pointing...
+2016-04-07 07:08:25.429+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting store flush...
+2016-04-07 07:08:25.430+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 258 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 07:08:25.430+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 258 to [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.b], from [/Users/jianwei/Desktop/learnRails/boomerang/db/neo4j/development/data/graph.db/neostore.counts.db.a].
+2016-04-07 07:08:25.431+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Store flush completed
+2016-04-07 07:08:25.431+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting appending check point entry into the tx log...
+2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Appending check point entry into the tx log completed
+2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Check pointing completed
+2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-07 07:08:25.432+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
