@@ -166,6 +166,11 @@ class User
 	#	end
 	#	return debt_amount
 	#end
+	def add_pending_debt(other_user, debt_amount = 0)
+		return nil unless friends_with(other_user)
+		debt_amount = BigDecimal.new(debt_amount)
+		PendingDebt.create(from_node: self, to_node: other_user, amount: debt_amount.to_s)
+	end
 
 	def add_debt(other_user, debt_amount = 0)
 		return nil unless debt_amount > 0 && friends_with(other_user)
