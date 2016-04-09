@@ -6,15 +6,18 @@ require 'bigdecimal'
 class Simpler
 	def simplify()
 		group = retrieve_pending()
-		return if group.nil?
+		return nil if group.nil?
 		pending_id = group[0]
 		amount = group[1]
 		from_id = group[2]
 		to_id = group[3]
+		#puts "group from retrive_pending() is #{group}"
+		#puts "calling debt_bfs with from_id: #{from_id.to_s} and to_id: #{to_id.to_s}"
 		path = debt_bfs(from_id, to_id)
 		if path.nil? || path.empty?
 			create_debt(from_id, to_id, amount)
 		else
+		#	puts "path is #{path}"
 			index = 0
 			path['edges'].each do |edge|
 				update_debt(edge, path['nodes'][index], amount) #check for directionality. If inline, add, else subtract. Fix in update_amount
@@ -22,6 +25,7 @@ class Simpler
 			end
 		end
 		destroy_rel(pending_id)
+		return true
 	end
 
 	def retrieve_pending()
@@ -41,6 +45,7 @@ class Simpler
 			if(BigDecimal(result["results"][0]["data"][0]["row"][1].to_s) < 0)
 				from = t
 				to = f
+				amount = BigDecimal(-1)*BigDecimal(amount)
 			else
 				from = f
 				to = t
@@ -73,6 +78,7 @@ class Simpler
 	end
 
 	def update_debt(id,from_node, delta)
+		#puts "update_debt(#{id.to_s}, #{from_node.to_s}, #{delta.to_s})"
 		#relative_url = 'db/data/relationship/' + id.to_s + '/properties/amount'
 		relative_url = 'db/data/node/' + from_node.to_s + '/relationships/all'
 		result = server_request('GET', relative_url)
@@ -89,6 +95,7 @@ class Simpler
 				break
 			end
 		end
+		#puts "inline is #{inline}"
 		if inline
 			new_amount = BigDecimal.new(current_amount) + BigDecimal(delta.to_s)
 		else
@@ -98,7 +105,7 @@ class Simpler
 			destroy_rel(id)
 		else
 			payload = new_amount.to_s
-		#print "Payload is: "
+		#puts "Payload is: "
 		#puts payload
 			relative_url = 'db/data/relationship/' + id.to_s + '/properties/amount'
 			server_request('PUT', relative_url, payload)

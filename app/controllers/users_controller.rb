@@ -18,27 +18,27 @@ class UsersController < ApplicationController
   def edit
   end
 
-#  def create
-#    @user = User.new(user_params)
-#    if @user.save
-#    	redirect_to root_url
-#    else
-#    	render 'new'
-#    end
-#  end
+  def create
+    @user = User.new(user_params)
+    if @user.save
+    	redirect_to root_url
+    else
+    	render 'new'
+    end
+  end
 
-	def create
-		@user = User.new(user_params)
-		respond_to do |format|
-		if @user.save
-			format.html {redirect_to @user, notice: 'User was successfully created'}
-			format.json {render action: 'index'}
-		else
-			format.html { render action: 'new'}
-			format.json { render json: @user.errors}
-		end
-		end
-	end
+#	def create
+#		@user = User.new(user_params)
+#		respond_to do |format|
+#		if @user.save
+#			format.html {redirect_to @user, notice: 'User was successfully created'}
+#			format.json {render action: 'index'}
+#		else
+#			format.html { render action: 'new'}
+#			format.json { render json: @user.errors}
+#		end
+#		end
+#	end
 
   def update
 	if @user.update(user_params)

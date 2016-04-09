@@ -1,0 +1,14 @@
+<% provide(:title, 'Log in') %>
+<h1>L<a style="color:#0b33a3; background-color:#fff">o</a>g in</h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+
+	<%= render 'layouts/error_messages' %>
+
+	<%= f.email_field :email, :placeholder => "Email" %>
+	<%= f.password_field :password, :placeholder => "Password" %>
+	
+	<%= f.submit "LOG IN" %>
+<% end %>
+
+<p>New user? <%= link_to 'Sign up now!', signup_path %></p>
