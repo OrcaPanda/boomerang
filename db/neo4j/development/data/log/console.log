@@ -1,6 +1,6 @@
-2016-04-08 18:11:31.199-0700 INFO  Successfully started database
-2016-04-08 18:11:31.214-0700 INFO  Starting HTTP on port 7474 (8 threads available)
-2016-04-08 18:11:31.329-0700 INFO  Enabling HTTPS on port 7473
-2016-04-08 18:11:31.378-0700 INFO  Mounting static content at /webadmin
-2016-04-08 18:11:31.409-0700 INFO  Mounting static content at /browser
-2016-04-08 18:11:32.444-0700 INFO  Remote interface ready and available at http://localhost:7474/
+2016-04-09 11:30:44.543-0700 INFO  Successfully started database
+2016-04-09 11:30:44.567-0700 INFO  Starting HTTP on port 7474 (8 threads available)
+2016-04-09 11:30:44.754-0700 INFO  Enabling HTTPS on port 7473
+2016-04-09 11:30:44.838-0700 INFO  Mounting static content at /webadmin
+2016-04-09 11:30:44.890-0700 INFO  Mounting static content at /browser
+2016-04-09 11:30:46.014-0700 INFO  Remote interface ready and available at http://localhost:7474/
