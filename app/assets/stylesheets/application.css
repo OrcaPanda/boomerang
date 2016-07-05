@@ -28,7 +28,7 @@
   margin: 0 0 3em 0;
   padding: 0;
   list-style: none;
-  background-color: #fff;
+  background-color: #aff;  //Changed this colour to make header noticeable
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
 }
