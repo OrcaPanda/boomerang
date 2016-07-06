@@ -11,6 +11,7 @@ class User
   property :password_digest, type: String
   property :remember_digest, type: String
   property :admin, type: String
+  property :simplified, type: Boolean, default: false  
   property :budget, type: BigDecimal, default: 100
   property :activation_digest, type: String
   property :activated, type: String
