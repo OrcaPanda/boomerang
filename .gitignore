@@ -14,3 +14,20 @@
 
 #Ignore database data files
 /db/neo4j
+
+#Ignore compiled executables
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+#Ignore random files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
