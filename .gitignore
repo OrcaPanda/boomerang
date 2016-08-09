@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+#Ignore database data files
+/db/neo4j
